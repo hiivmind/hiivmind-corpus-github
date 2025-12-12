@@ -1,0 +1,159 @@
+---
+name: hiivmind-corpus-github-docs-navigate
+description: Find relevant GitHub documentation. Use when working with GitHub Actions, Copilot, REST API, GraphQL, code security, repositories, pull requests, or any GitHub feature.
+---
+
+# GitHub Docs Corpus Navigator
+
+Find and retrieve relevant documentation from the GitHub Docs corpus.
+
+## Process
+
+1. **Read the master index**: `data/index.md` - contains section overview and GraphQL schema reference
+2. **Find the relevant section** and read its section index: `data/sections/{section}.md`
+3. **Parse path format**: `{source_id}:{relative_path}`
+4. **Check for `⚡ GREP` marker** - if present, use Grep instead of Read (see Large Structured Files section)
+5. **Look up source** in `data/config.yaml` by ID
+6. **Get content** based on source type (see Source Access below)
+7. **Answer** with citation to source and file path
+
+## Index Structure
+
+This corpus uses a **hierarchical index**:
+
+```
+data/
+├── index.md                    # Master index with section overview
+└── sections/
+    ├── actions.md              # GitHub Actions (239 docs)
+    ├── copilot.md              # GitHub Copilot (321 docs)
+    ├── rest.md                 # REST API (292 docs)
+    ├── code-security.md        # Code Security (443 docs)
+    └── ... (36 total sections)
+```
+
+**Navigation flow:**
+1. Start with `data/index.md` to find the right section
+2. Read `data/sections/{section}.md` for detailed entries
+3. Access the actual doc via path format
+
+## Path Format
+
+Index entries use the format: `{source_id}:{relative_path}`
+
+Examples:
+- `docs:actions/index.md` - Git source
+- `local:team-standards/coding-guidelines.md` - Local uploads
+- `web:blog-posts/article-name.md` - Cached web content
+
+## Source Access
+
+### For git sources
+
+Look up the source in `data/config.yaml` to get `repo_owner`, `repo_name`, `branch`, and `docs_root`.
+
+**IMPORTANT: Always check for local clone first!**
+
+**Step 1 - Check for local clone:**
+Use Glob or Bash to check if `.source/{source_id}/` exists.
+
+**Step 2a - If local clone exists (PREFERRED):**
+Read directly from `.source/{source_id}/{docs_root}/{path}` using the Read tool.
+This is faster and works offline.
+
+**Step 2b - If NO local clone exists (fallback only):**
+Fetch from GitHub:
+```
+https://raw.githubusercontent.com/{repo_owner}/{repo_name}/{branch}/{docs_root}/{path}
+```
+Use WebFetch to retrieve content.
+
+**Tip:** If web fetching is slow or unreliable, suggest cloning locally:
+```bash
+git clone --depth 1 {repo_url} .source/{source_id}
+```
+This improves performance and enables offline access.
+
+**Staleness check for git sources:**
+After reading, compare the source's `last_commit_sha` in config to the local clone:
+```bash
+cd .source/{source_id} && git rev-parse HEAD
+```
+If clone is **newer** than indexed SHA → warn user: "The docs have been updated since the index was built. Consider running refresh to update the index."
+
+### For local sources
+
+Read directly from: `data/uploads/{source_id}/{path}`
+
+Local sources are user-uploaded files stored within the corpus.
+
+### For web sources
+
+Read from cache: `.cache/web/{source_id}/{cached_file}`
+
+If cache miss, look up the URL in `data/config.yaml` and fetch fresh content.
+
+## File Locations
+
+- **Master Index**: `data/index.md` - section overview, GraphQL schema reference
+- **Section Indices**: `data/sections/{section}.md` - detailed per-section entries
+- **Config**: `data/config.yaml` (has sources array with per-source tracking)
+- **Git sources**: `.source/{source_id}/` (cloned repos, gitignored)
+- **Local sources**: `data/uploads/{source_id}/` (user-uploaded files)
+- **Web cache**: `.cache/web/{source_id}/` (fetched web content, gitignored)
+
+## Large Structured Files (schemas, specs, configs)
+
+For large files like GraphQL schemas, OpenAPI specs, or JSON configs, **DO NOT read the entire file**. Use Grep to search precisely:
+
+**GraphQL Schema patterns:**
+```bash
+# Find a type definition
+grep -n "^type Repository " schema.graphql -A 30
+
+# Find an input type
+grep -n "^input CreateIssueInput " schema.graphql -A 20
+
+# Find a mutation
+grep -n "createIssue" schema.graphql -B 2 -A 15
+
+# Find all fields returning a specific type
+grep -n ": Repository" schema.graphql
+
+# Find enum values
+grep -n "^enum IssueState " schema.graphql -A 10
+```
+
+**OpenAPI/Swagger patterns:**
+```bash
+# Find an endpoint
+grep -n "/repos/{owner}/{repo}/issues" openapi.yaml -A 30
+
+# Find a schema definition
+grep -n "^  Issue:" openapi.yaml -A 40
+```
+
+**General patterns:**
+```bash
+# Find definition with context
+grep -n "^{keyword}" file -A 20
+
+# Find all references to something
+grep -n "{keyword}" file
+
+# Case-insensitive search
+grep -ni "{keyword}" file
+```
+
+**When to use Grep vs Read:**
+- File > 1000 lines → prefer Grep
+- Looking for specific definition → Grep with `-A` context
+- Need surrounding context → Grep with `-B` and `-A`
+- Need to understand overall structure → Read first 100 lines, then Grep
+
+## Output
+
+- Cite the source ID and file path for reference
+- Include code examples from the docs
+- Suggest related docs from the same index section
+- Note source type and freshness warnings if relevant

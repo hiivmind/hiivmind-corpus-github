@@ -1,0 +1,9 @@
+{
+  "name": "hiivmind-corpus-github",
+  "description": "Documentation corpus collection for GitHub",
+  "version": "1.0.0",
+  "author": {
+    "name": "hiivmind"
+  },
+  "repository": "https://github.com/hiivmind/hiivmind-corpus-github"
+}

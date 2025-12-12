@@ -1,0 +1,7 @@
+{
+  "plugins": [
+    {
+      "path": "hiivmind-corpus-github-docs"
+    }
+  ]
+}
