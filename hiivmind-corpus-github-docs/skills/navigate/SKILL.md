@@ -9,13 +9,61 @@ Find and retrieve relevant documentation from the GitHub Docs corpus.
 
 ## Process
 
-1. **Read the master index**: `data/index.md` - contains section overview and GraphQL schema reference
-2. **Find the relevant section** and read its section index: `data/sections/{section}.md`
+1. **Search the indexes first** (see Index Search section below)
+   - Extract key concepts from the question
+   - Grep the index files for those terms
+   - If matches found → use those entries directly
+2. **If no search matches, navigate by section**:
+   - Read the master index: `data/index.md` - contains section overview and GraphQL schema reference
+   - Find the relevant section and read its section index: `data/sections/{section}.md`
 3. **Parse path format**: `{source_id}:{relative_path}`
 4. **Check for `⚡ GREP` marker** - if present, use Grep instead of Read (see Large Structured Files section)
 5. **Look up source** in `data/config.yaml` by ID
 6. **Get content** based on source type (see Source Access below)
 7. **Answer** with citation to source and file path
+
+## Index Search (Recommended First Step)
+
+**Before reading sections sequentially, SEARCH the indexes for relevant terms.**
+
+### Step 1: Extract Key Concepts
+
+Analyze the user's question and extract:
+- **Explicit terms**: Words directly used in the question
+- **Synonyms**: Related terms (e.g., "filter" → also try "view", "query", "search")
+- **Domain terms**: Technical concepts that might appear in docs (e.g., "tag" → also try "label", "field")
+
+Example: "How do I filter GitHub projects by tag?"
+- Explicit: `filter`, `projects`, `tag`
+- Synonyms: `view`, `query`, `search`
+- Domain: `label`, `field`, `custom field`
+
+### Step 2: Search All Index Files
+
+```bash
+# Search for each term across all index files
+grep -ri "filter" data/ --include="*.md"
+grep -ri "tag" data/ --include="*.md"
+grep -ri "label" data/ --include="*.md"
+```
+
+**Tip:** Search for the most specific term first. If no matches, broaden to synonyms.
+
+### Step 3: Use Search Results
+
+If grep finds matches:
+1. **Direct hit**: Entry description matches the question → use that path
+2. **Related hit**: Entry is in the right area → read that section for context
+3. **No hit in index**: The topic may not be indexed yet → report this as an index gap
+
+### Step 4: Report Index Gaps
+
+If the user's question cannot be answered because the index lacks relevant entries:
+
+> "The index doesn't have entries for '{term}'. The closest match is '{related_section}'.
+> If this topic should be covered, consider running `hiivmind-corpus-enhance` to add depth to this area."
+
+This is valuable feedback for corpus improvement.
 
 ## Index Structure
 
