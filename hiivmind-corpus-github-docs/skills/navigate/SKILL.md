@@ -1,5 +1,5 @@
 ---
-name: hiivmind-corpus-github-docs-navigate
+name: hiivmind-corpus-navigate-github-docs
 description: Find relevant GitHub documentation. Use when working with GitHub Actions, Copilot, REST API, GraphQL, code security, repositories, pull requests, or any GitHub feature.
 ---
 
