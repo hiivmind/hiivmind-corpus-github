@@ -1,13 +1,64 @@
 ---
-name: hiivmind-corpus-navigate-github-docs
-description: Find relevant GitHub documentation. Use when working with GitHub Actions, Copilot, REST API, GraphQL, code security, repositories, pull requests, or any GitHub feature.
+description: Ask questions about GitHub documentation or manage this corpus
+argument-hint: Question or command (e.g., "how do reusable workflows work?", "refresh", "enhance actions")
+allowed-tools: ["Read", "Grep", "Glob", "WebFetch", "AskUserQuestion", "Skill", "Task", "TodoWrite"]
 ---
 
 # GitHub Docs Corpus Navigator
 
-Find and retrieve relevant documentation from the GitHub Docs corpus.
+Direct access to GitHub documentation. This corpus covers Actions, Copilot, REST API, GraphQL, code security, repositories, and more.
 
-## Process
+**User request:** $ARGUMENTS
+
+**Corpus location:** `${CLAUDE_PLUGIN_ROOT}`
+
+---
+
+## Routing
+
+### If no arguments provided
+
+Show a brief help message:
+
+```
+GitHub Docs Corpus - ask me anything about GitHub!
+
+Examples:
+  /hiivmind-corpus-github:navigate how do reusable workflows work?
+  /hiivmind-corpus-github:navigate what's the rate limit for REST API?
+  /hiivmind-corpus-github:navigate GraphQL mutation to create an issue
+
+Maintenance:
+  /hiivmind-corpus-github:navigate refresh     - Update index from upstream
+  /hiivmind-corpus-github:navigate enhance X   - Add depth to topic X
+  /hiivmind-corpus-github:navigate status      - Check corpus freshness
+```
+
+### If arguments match a maintenance command
+
+| Pattern | Skill to Load |
+|---------|---------------|
+| `refresh`, `update`, `sync` | `hiivmind-corpus-refresh` |
+| `enhance {topic}` | `hiivmind-corpus-enhance` |
+| `status`, `freshness`, `stale?` | `hiivmind-corpus-refresh` (status mode) |
+| `add source {url}` | `hiivmind-corpus-add-source` |
+| `awareness`, `inject`, `claude.md` | `hiivmind-corpus-awareness` |
+
+**How to invoke parent skills:**
+
+1. **Set corpus context** - All paths are relative to `${CLAUDE_PLUGIN_ROOT}`
+2. **Load the skill** via the Skill tool (e.g., `hiivmind-corpus-refresh`)
+3. **Pass context** in your message: "Working in GitHub corpus at ${CLAUDE_PLUGIN_ROOT}. User wants to {action}."
+
+The parent skill will then operate on THIS corpus using relative paths like `data/config.yaml`, `data/index.md`, `.source/`, etc.
+
+### Otherwise: Navigate (default path)
+
+This is a documentation question. Follow the navigation process below.
+
+---
+
+## Navigation Process
 
 1. **Search the indexes first** (see Index Search section below)
    - Extract key concepts from the question
@@ -21,6 +72,8 @@ Find and retrieve relevant documentation from the GitHub Docs corpus.
 5. **Look up source** in `data/config.yaml` by ID
 6. **Get content** based on source type (see Source Access below)
 7. **Answer** with citation to source and file path
+
+---
 
 ## Index Search (Recommended First Step)
 
@@ -44,7 +97,6 @@ Example: "How do I filter GitHub projects by tag?"
 # Search for each term across all index files
 grep -ri "filter" data/ --include="*.md"
 grep -ri "tag" data/ --include="*.md"
-grep -ri "label" data/ --include="*.md"
 ```
 
 **Tip:** Search for the most specific term first. If no matches, broaden to synonyms.
@@ -77,22 +129,11 @@ Don't start exploring, guessing paths, or searching the source files. Instead, *
 3. **Identify an index gap** - If the user confirms their request was valid
    - "This topic isn't covered in the current index."
    - Offer next steps:
-     - `hiivmind-corpus-enhance` - Add depth to a specific topic area
-     - `hiivmind-corpus-add-source` - Add another documentation source
-     - `hiivmind-corpus-refresh` - Check if upstream docs have new content
+     - `/hiivmind-corpus-github:navigate enhance {topic}` - Add depth to a specific topic area
+     - `/hiivmind-corpus-github:navigate add source {url}` - Add another documentation source
+     - `/hiivmind-corpus-github:navigate refresh` - Check if upstream docs have new content
 
-**Example response:**
-
-> I searched the index for "filtering", "views", and "projects" but found no direct matches.
->
-> **Options:**
-> 1. **Rephrase**: Did you mean "customizing views" or "project settings"?
-> 2. **Related sections**: The "Projects" section covers Views & Layouts, Fields, and Automations
-> 3. **Index gap**: If you expected this topic to be covered, the index may need:
->    - Enhancing with `hiivmind-corpus-enhance` for more depth
->    - A new source added with `hiivmind-corpus-add-source`
->
-> Which would you like to explore?
+---
 
 ## Index Structure
 
@@ -114,14 +155,18 @@ data/
 2. Read `data/sections/{section}.md` for detailed entries
 3. Access the actual doc via path format
 
+---
+
 ## Path Format
 
 Index entries use the format: `{source_id}:{relative_path}`
 
 Examples:
 - `docs:actions/index.md` - Git source
+- `gh-cli-manual:gh_repo_create` - Generated-docs source
 - `local:team-standards/coding-guidelines.md` - Local uploads
-- `web:blog-posts/article-name.md` - Cached web content
+
+---
 
 ## Source Access
 
@@ -153,7 +198,7 @@ sources:
 ### For git sources
 
 **Step 1 - Check for local clone:**
-Use Glob or Bash to check if `.source/{source_id}/` exists.
+Use Glob to check if `.source/{source_id}/` exists.
 
 **Step 2a - If local clone exists (PREFERRED):**
 Read directly from `.source/{source_id}/{docs_root}/{relative_path}` using the Read tool.
@@ -164,26 +209,29 @@ Fetch from GitHub using the EXACT path from the index:
 ```
 https://raw.githubusercontent.com/{repo_owner}/{repo_name}/{branch}/{docs_root}/{relative_path}
 ```
-Use WebFetch to retrieve content.
 
-**Tip:** If web fetching is slow or unreliable, suggest cloning locally:
-```bash
-git clone --depth 1 {repo_url} .source/{source_id}
-```
-This improves performance and enables offline access.
+### For generated-docs sources
 
-**Staleness check for git sources:**
-After reading, compare the source's `last_commit_sha` in config to the local clone:
-```bash
-cd .source/{source_id} && git rev-parse HEAD
+**Step 1 - Look up source in config.yaml:**
+```yaml
+sources:
+  - id: gh-cli-manual
+    type: generated-docs
+    web_output:
+      base_url: https://cli.github.com/manual
 ```
-If clone is **newer** than indexed SHA → warn user: "The docs have been updated since the index was built. Consider running refresh to update the index."
+
+**Step 2 - Construct URL:**
+```
+{base_url}/{relative_path}
+```
+Example: `https://cli.github.com/manual/gh_repo_create`
+
+**Step 3 - Fetch via WebFetch**
 
 ### For local sources
 
 Read directly from: `data/uploads/{source_id}/{path}`
-
-Local sources are user-uploaded files stored within the corpus.
 
 ### For web sources
 
@@ -191,14 +239,7 @@ Read from cache: `.cache/web/{source_id}/{cached_file}`
 
 If cache miss, look up the URL in `data/config.yaml` and fetch fresh content.
 
-## File Locations
-
-- **Master Index**: `data/index.md` - section overview, GraphQL schema reference
-- **Section Indices**: `data/sections/{section}.md` - detailed per-section entries
-- **Config**: `data/config.yaml` (has sources array with per-source tracking)
-- **Git sources**: `.source/{source_id}/` (cloned repos, gitignored)
-- **Local sources**: `data/uploads/{source_id}/` (user-uploaded files)
-- **Web cache**: `.cache/web/{source_id}/` (fetched web content, gitignored)
+---
 
 ## Large Structured Files (schemas, specs, configs)
 
@@ -222,32 +263,24 @@ grep -n ": Repository" schema.graphql
 grep -n "^enum IssueState " schema.graphql -A 10
 ```
 
-**OpenAPI/Swagger patterns:**
-```bash
-# Find an endpoint
-grep -n "/repos/{owner}/{repo}/issues" openapi.yaml -A 30
-
-# Find a schema definition
-grep -n "^  Issue:" openapi.yaml -A 40
-```
-
-**General patterns:**
-```bash
-# Find definition with context
-grep -n "^{keyword}" file -A 20
-
-# Find all references to something
-grep -n "{keyword}" file
-
-# Case-insensitive search
-grep -ni "{keyword}" file
-```
-
 **When to use Grep vs Read:**
 - File > 1000 lines → prefer Grep
 - Looking for specific definition → Grep with `-A` context
 - Need surrounding context → Grep with `-B` and `-A`
 - Need to understand overall structure → Read first 100 lines, then Grep
+
+---
+
+## File Locations
+
+- **Master Index**: `data/index.md` - section overview, GraphQL schema reference
+- **Section Indices**: `data/sections/{section}.md` - detailed per-section entries
+- **Config**: `data/config.yaml` (has sources array with per-source tracking)
+- **Git sources**: `.source/{source_id}/` (cloned repos, gitignored)
+- **Local sources**: `data/uploads/{source_id}/` (user-uploaded files)
+- **Web cache**: `.cache/web/{source_id}/` (fetched web content, gitignored)
+
+---
 
 ## Output
 
@@ -256,17 +289,13 @@ grep -ni "{keyword}" file
 - Suggest related docs from the same index section
 - Note source type and freshness warnings if relevant
 
+---
+
 ## Making Projects Aware of This Corpus
 
 If you're working in a project that uses GitHub features but doesn't know about this corpus, you can add awareness to the project's CLAUDE.md.
 
 **The `data/project-awareness.md` file** contains a ready-to-use snippet that can be added to any project's CLAUDE.md to make Claude aware of this corpus when working in that project.
-
-### How to Inject
-
-1. Read `data/project-awareness.md` from this corpus
-2. Add its contents to the target project's CLAUDE.md (create if needed)
-3. The project will now know to use this corpus for GitHub questions
 
 ### When to Suggest Injection
 
@@ -277,3 +306,52 @@ Suggest adding project awareness when:
 
 Example suggestion:
 > "I notice this project uses GitHub Actions. Would you like me to add corpus awareness to this project's CLAUDE.md? That way I'll automatically know to check the GitHub docs when working here."
+
+---
+
+## Example Sessions
+
+### Documentation Question
+
+**User:** `/hiivmind-corpus-github:navigate how do I use composite actions?`
+
+1. Grep `data/sections/actions.md` for "composite"
+2. Find entry like `docs:actions/sharing-automations/creating-actions/creating-a-composite-action.md`
+3. Read from `.source/docs/content/actions/sharing-automations/creating-actions/creating-a-composite-action.md`
+4. Answer with code examples and link to source
+
+### GraphQL Query
+
+**User:** `/hiivmind-corpus-github:navigate GraphQL query for repository collaborators`
+
+1. Read `data/index.md` GraphQL reference section
+2. Grep the schema for "collaborators"
+3. Provide the query structure with field descriptions
+
+### Maintenance: Refresh
+
+**User:** `/hiivmind-corpus-github:navigate refresh`
+
+1. Detect maintenance keyword: `refresh`
+2. Load parent skill: `hiivmind-corpus-refresh`
+3. Context message: "Working in GitHub corpus at ${CLAUDE_PLUGIN_ROOT}. User wants to refresh/sync from upstream."
+4. Parent skill executes using relative paths (`data/config.yaml`, `.source/`, etc.)
+
+### Maintenance: Enhance
+
+**User:** `/hiivmind-corpus-github:navigate enhance actions`
+
+1. Detect maintenance keyword: `enhance`
+2. Extract topic: `actions`
+3. Load parent skill: `hiivmind-corpus-enhance`
+4. Context message: "Working in GitHub corpus at ${CLAUDE_PLUGIN_ROOT}. User wants to enhance the 'actions' section."
+5. Parent skill reads index, explores `.source/`, proposes enhancements
+
+---
+
+## Notes
+
+- This corpus has ~2400+ documents across 36 sections
+- GraphQL schema is indexed for quick type/mutation lookup
+- Section indexes are searchable - always grep before reading sequentially
+- For large files (schemas, specs), use Grep with context flags, not full Read
