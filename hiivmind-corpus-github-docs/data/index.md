@@ -1,8 +1,8 @@
 # GitHub Documentation Corpus
 
-> **Sources:** docs (github/docs), graphql-schema (local)
-> **Total:** 3,346 documentation files + GraphQL schema
-> **Last updated:** 2025-12-13
+> **Sources:** docs (github/docs), graphql-schema (local), gh-cli-manual (web)
+> **Total:** 3,346 documentation files + GraphQL schema + gh CLI reference
+> **Last updated:** 2025-12-18
 
 This corpus provides comprehensive GitHub documentation. The index is organized by section, with detailed indices in `sections/`.
 
@@ -18,6 +18,31 @@ This corpus provides comprehensive GitHub documentation. The index is organized 
   - Find enum: `grep -n "^enum {Name} " ... -A 20`
   - Find mutation: `grep -n "{mutationName}" ... -B 5 -A 30`
   - Find fields returning type: `grep -n ": {TypeName}" ...`
+
+### GitHub CLI (gh) Command Reference
+
+Web source from https://cli.github.com/manual - detailed command reference with flags, options, and examples.
+
+**Commands by category:** (165 commands indexed)
+
+| Category | Commands | Description |
+|----------|----------|-------------|
+| **auth** | login, logout, refresh, setup-git, status, switch, token | Authentication management |
+| **pr** | checkout, checks, close, comment, create, diff, edit, list, lock, merge, ready, reopen, revert, review, status, unlock, update-branch, view | Pull request operations |
+| **issue** | close, comment, create, delete, develop, edit, list, lock, pin, reopen, status, transfer, unlock, unpin, view | Issue management |
+| **repo** | archive, clone, create, delete, edit, fork, list, rename, set-default, sync, unarchive, view | Repository operations |
+| **workflow** | disable, enable, list, run, view | Workflow management |
+| **run** | cancel, delete, download, list, rerun, view, watch | Workflow run operations |
+| **release** | create, delete, download, edit, list, upload, view | Release management |
+| **project** | close, copy, create, delete, edit, field-*, item-*, link, list, mark-template, unlink, view | GitHub Projects |
+| **search** | code, commits, issues, prs, repos | Search functionality |
+| **secret/variable** | delete, get, list, set | Secrets and environment variables |
+| **gist** | clone, create, delete, edit, list, rename, view | Gist management |
+| **extension** | browse, create, exec, install, list, remove, search, upgrade | CLI extensions |
+| **codespace** | code, cp, create, delete, edit, jupyter, list, logs, ports, rebuild, ssh, stop, view | Codespaces |
+| **config/alias** | clear-cache, delete, get, import, list, set | Configuration and aliases |
+
+**To fetch command details:** Use WebFetch with URL pattern `https://cli.github.com/manual/gh_{command}_{subcommand}` (e.g., `gh_pr_create`)
 
 ---
 
