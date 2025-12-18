@@ -295,7 +295,7 @@ grep -n "^enum IssueState " schema.graphql -A 10
 
 If you're working in a project that uses GitHub features but doesn't know about this corpus, you can add awareness to the project's CLAUDE.md.
 
-**The `data/project-awareness.md` file** contains a ready-to-use snippet that can be added to any project's CLAUDE.md to make Claude aware of this corpus when working in that project.
+**The `references/project-awareness.md` file** contains a ready-to-use snippet that can be added to any project's CLAUDE.md to make Claude aware of this corpus when working in that project.
 
 ### When to Suggest Injection
 
