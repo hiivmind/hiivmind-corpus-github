@@ -1,35 +1,15 @@
 ---
-description: Ask questions about GitHub documentation
-argument-hint: Your question (e.g., "how do reusable workflows work?", "GraphQL mutation for issues")
-allowed-tools: ["Read", "Grep", "Glob", "WebFetch", "AskUserQuestion", "Task", "TodoWrite"]
+name: hiivmind-corpus-github-docs-navigate
+description: This skill answers questions about GitHub documentation including GitHub Actions, REST API, GraphQL API, GitHub Copilot, code security, repositories, workflows, and the gh CLI. Use when user asks about GitHub features, GitHub API usage, Actions workflows, or gh command line tool.
 ---
 
-# GitHub Docs Corpus Navigator
+# GitHub Docs Navigator
 
-Direct access to GitHub documentation. This corpus covers Actions, Copilot, REST API, GraphQL, code security, repositories, and more.
+Direct access to GitHub documentation covering Actions, Copilot, REST API, GraphQL, code security, repositories, and more.
 
 **User request:** $ARGUMENTS
 
 **Corpus location:** `${CLAUDE_PLUGIN_ROOT}`
-
----
-
-## If No Arguments Provided
-
-Show a brief help message:
-
-```
-GitHub Docs Corpus - ask me anything about GitHub!
-
-Examples:
-  /hiivmind-corpus-github-docs:navigate how do reusable workflows work?
-  /hiivmind-corpus-github-docs:navigate what's the rate limit for REST API?
-  /hiivmind-corpus-github-docs:navigate GraphQL mutation to create an issue
-
-For maintenance, use the parent plugin:
-  /hiivmind-corpus refresh github-docs
-  /hiivmind-corpus enhance github-docs [topic]
-```
 
 ---
 
@@ -103,7 +83,7 @@ Don't start exploring, guessing paths, or searching the source files. Instead, *
 
 3. **Identify an index gap** - If the user confirms their request was valid
    - "This topic isn't covered in the current index."
-   - Offer: "Would you like me to enhance the index for this topic? Use `/hiivmind-corpus enhance github-docs {topic}`"
+   - Offer: "Would you like me to enhance the index for this topic?"
 
 ---
 
@@ -263,6 +243,18 @@ grep -n "^enum IssueState " schema.graphql -A 10
 
 ---
 
+## Corpus Maintenance
+
+For corpus maintenance, use the parent plugin:
+
+```
+/hiivmind-corpus refresh github-docs     - Update index from upstream
+/hiivmind-corpus enhance github-docs X   - Add depth to topic X
+/hiivmind-corpus status github-docs      - Check corpus freshness
+```
+
+---
+
 ## Making Projects Aware of This Corpus
 
 If you're working in a project that uses GitHub features but doesn't know about this corpus, you can add awareness to the project's CLAUDE.md.
@@ -276,16 +268,13 @@ Suggest adding project awareness when:
 - User repeatedly asks GitHub API questions without invoking the corpus
 - User says "I keep forgetting to use the docs"
 
-Example suggestion:
-> "I notice this project uses GitHub Actions. Would you like me to add corpus awareness to this project's CLAUDE.md? That way I'll automatically know to check the GitHub docs when working here."
-
 ---
 
 ## Example Sessions
 
 ### Documentation Question
 
-**User:** `/hiivmind-corpus-github-docs:navigate how do I use composite actions?`
+**User:** "how do I use composite actions?"
 
 1. Grep `data/sections/actions.md` for "composite"
 2. Find entry like `docs:actions/sharing-automations/creating-actions/creating-a-composite-action.md`
@@ -294,23 +283,11 @@ Example suggestion:
 
 ### GraphQL Query
 
-**User:** `/hiivmind-corpus-github-docs:navigate GraphQL query for repository collaborators`
+**User:** "GraphQL query for repository collaborators"
 
 1. Read `data/index.md` GraphQL reference section
 2. Grep the schema for "collaborators"
 3. Provide the query structure with field descriptions
-
----
-
-## Corpus Maintenance
-
-For corpus maintenance, use the parent plugin:
-
-```
-/hiivmind-corpus refresh github-docs     - Update index from upstream
-/hiivmind-corpus enhance github-docs X   - Add depth to topic X
-/hiivmind-corpus status github-docs      - Check corpus freshness
-```
 
 ---
 
