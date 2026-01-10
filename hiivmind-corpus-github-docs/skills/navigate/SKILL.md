@@ -1,6 +1,6 @@
 ---
 name: hiivmind-corpus-github-docs-navigate
-description: This skill answers questions about GitHub documentation including GitHub Actions, REST API, GraphQL API, GitHub Copilot, code security, repositories, workflows, and the gh CLI. Use when user asks about GitHub features, GitHub API usage, Actions workflows, or gh command line tool.
+description: This skill answers questions about GitHub documentation including GitHub Actions, REST API, GraphQL API, GitHub Copilot, code security, repositories, workflows, and the gh CLI. Use when user asks about GitHub features, GitHub API usage, Actions workflows, or gh command line tool. Triggers: github, actions, api, graphql, rest, copilot, gh cli, workflows, repositories, code security, pull requests, issues.
 ---
 
 # GitHub Docs Navigator
@@ -114,9 +114,9 @@ data/
 Index entries use the format: `{source_id}:{relative_path}`
 
 Examples:
-- `docs:actions/index.md` - Git source
-- `gh-cli-manual:gh_repo_create` - Generated-docs source
-- `local:team-standards/coding-guidelines.md` - Local uploads
+- `docs:actions/index.md` - Git source (GitHub Actions docs)
+- `gh-cli-manual:gh_repo_create` - Generated-docs source (gh CLI manual)
+- `docs:repositories/creating-and-managing-repositories/index.md` - Repositories section
 
 ---
 
