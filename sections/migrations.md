@@ -2,7 +2,7 @@
 
 Repository migration documentation - importing and migrating to GitHub.
 
-> **48 files** | Source: `docs:migrations/`
+> **69 files** | Source: `docs:migrations/`
 
 ---
 
@@ -30,3 +30,10 @@ Repository migration documentation - importing and migrating to GitHub.
 ## ghe-migrator
 
 - **ghe-migrator** `docs:migrations/using-ghe-migrator/index.md`
+
+## New Documentation
+
+- **Ado** (9 new files in `docs:migrations/ado/`) _(new)_
+- **Elm** (8 new files in `docs:migrations/elm/`) _(new)_
+- **Overview** (2 new files in `docs:migrations/overview/`) _(new)_
+- **Troubleshooting** (2 new files in `docs:migrations/troubleshooting/`) _(new)_

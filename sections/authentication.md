@@ -2,7 +2,7 @@
 
 Authentication documentation - SSH, tokens, SSO, and 2FA.
 
-> **79 files** | Source: `docs:authentication/`
+> **80 files** | Source: `docs:authentication/`
 
 ---
 
@@ -51,3 +51,7 @@ Authentication documentation - SSH, tokens, SSO, and 2FA.
 
 - **Troubleshooting** `docs:authentication/troubleshooting-ssh/index.md`
 - **Permission Denied** `docs:authentication/troubleshooting-ssh/error-permission-denied-publickey.md`
+
+## New Documentation
+
+- **Revoking Your Credentials** `docs:authentication/keeping-your-account-and-data-secure/revoking-your-credentials.md` _(new)_

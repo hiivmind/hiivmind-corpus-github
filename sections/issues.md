@@ -2,7 +2,7 @@
 
 Issue tracking and project management documentation.
 
-> **104 files** | Source: `docs:issues/`
+> **108 files** | Source: `docs:issues/`
 
 ---
 
@@ -37,3 +37,10 @@ Issue tracking and project management documentation.
 
 - **Issue Forms** `docs:issues/tracking-your-work-with-issues/configuring-issues/index.md`
 - **Templates** `docs:issues/tracking-your-work-with-issues/configuring-issues/about-issue-templates.md`
+
+## New Documentation
+
+- **About Issue Fields** `docs:issues/planning-and-tracking-with-projects/understanding-fields/about-issue-fields.md` _(new)_
+- **Cloning An Issue** `docs:issues/tracking-your-work-with-issues/administering-issues/cloning-an-issue.md` _(new)_
+- **Adding And Managing Issue Fields** `docs:issues/tracking-your-work-with-issues/using-issues/adding-and-managing-issue-fields.md` _(new)_
+- **Managing Issue Fields In Your Organization** `docs:issues/tracking-your-work-with-issues/using-issues/managing-issue-fields-in-your-organization.md` _(new)_

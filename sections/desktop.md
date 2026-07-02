@@ -2,7 +2,7 @@
 
 GitHub Desktop documentation - the desktop application for Git.
 
-> **50 files** | Source: `docs:desktop/`
+> **53 files** | Source: `docs:desktop/`
 
 ---
 
@@ -29,3 +29,9 @@ GitHub Desktop documentation - the desktop application for Git.
 
 - **Branch Management** `docs:desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches.md`
 - **Syncing Branches** `docs:desktop/contributing-and-collaborating-using-github-desktop/keeping-your-local-repository-in-sync/syncing-your-branch.md`
+
+## New Documentation
+
+- **Configuring Copilot In Github Desktop** `docs:desktop/configuring-and-customizing-github-desktop/configuring-copilot-in-github-desktop.md` _(new)_
+- **Managing Worktrees In Github Desktop** `docs:desktop/making-changes-in-a-branch/managing-worktrees-in-github-desktop.md` _(new)_
+- **Working With Git Hooks In Github Desktop** `docs:desktop/making-changes-in-a-branch/working-with-git-hooks-in-github-desktop.md` _(new)_

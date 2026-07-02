@@ -2,7 +2,7 @@
 
 GitHub GraphQL API documentation.
 
-> **27 files** | Source: `docs:graphql/`
+> **62 files** | Source: `docs:graphql/`
 > **Also see:** `graphql-schema:schema.docs.graphql` in main index (⚡ GREP - 70k lines)
 
 ---
@@ -24,14 +24,6 @@ GitHub GraphQL API documentation.
 ## Reference
 
 - **Reference Overview** `docs:graphql/reference/index.md`
-- **Queries** `docs:graphql/reference/queries.md`
-- **Mutations** `docs:graphql/reference/mutations.md`
-- **Objects** `docs:graphql/reference/objects.md`
-- **Interfaces** `docs:graphql/reference/interfaces.md`
-- **Enums** `docs:graphql/reference/enums.md`
-- **Unions** `docs:graphql/reference/unions.md`
-- **Input Objects** `docs:graphql/reference/input-objects.md`
-- **Scalars** `docs:graphql/reference/scalars.md`
 
 ---
 
@@ -46,3 +38,8 @@ For detailed type definitions, use the local GraphQL schema with Grep patterns:
 - Find input: `grep -n "^input CreateIssueInput " schema.docs.graphql -A 30`
 - Find enum: `grep -n "^enum IssueState " schema.docs.graphql -A 20`
 - Find mutation: `grep -n "createIssue" schema.docs.graphql -B 5 -A 30`
+
+## New Documentation
+
+- **Overview** (10 new files in `docs:graphql/overview/`) _(new)_
+- **Reference** (33 new files in `docs:graphql/reference/`) _(new)_

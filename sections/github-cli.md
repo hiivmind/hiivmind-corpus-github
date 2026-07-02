@@ -2,7 +2,7 @@
 
 GitHub CLI (gh) documentation.
 
-> **8 files** | Source: `docs:github-cli/`
+> **9 files** | Source: `docs:github-cli/`
 
 ---
 
@@ -19,3 +19,7 @@ GitHub CLI (gh) documentation.
 
 - **Using GitHub CLI** `docs:github-cli/using-github-cli/index.md`
 - **GitHub CLI in Workflows** `docs:github-cli/using-github-cli/using-github-cli-in-workflows.md`
+
+## New Documentation
+
+- **Github Cli Telemetry** `docs:github-cli/github-cli/github-cli-telemetry.md` _(new)_

@@ -2,7 +2,7 @@
 
 GitHub Copilot documentation - AI pair programming, chat, and code suggestions.
 
-> **321 files** | Source: `docs:copilot/`
+> **582 files** | Source: `docs:copilot/`
 
 ---
 
@@ -23,7 +23,6 @@ GitHub Copilot documentation - AI pair programming, chat, and code suggestions.
 - **Completions** `docs:copilot/concepts/completions/index.md` - Code completions
 - **Prompting** `docs:copilot/concepts/prompting/index.md` - Effective prompting
 - **Context** `docs:copilot/concepts/context/index.md` - How Copilot uses context
-- **Auto Model Selection** `docs:copilot/concepts/auto-model-selection.md` - Model selection
 
 ### Agents & Tools
 
@@ -38,7 +37,6 @@ GitHub Copilot documentation - AI pair programming, chat, and code suggestions.
 - **Enterprise Accounts** `docs:copilot/concepts/about-enterprise-accounts-for-copilot-business.md`
 - **Network Settings** `docs:copilot/concepts/network-settings.md` - Network configuration
 - **Rate Limits** `docs:copilot/concepts/rate-limits.md` - Usage limits
-- **Metrics** `docs:copilot/concepts/copilot-metrics.md` - Usage metrics
 
 ### Experimental
 
@@ -110,7 +108,6 @@ GitHub Copilot documentation - AI pair programming, chat, and code suggestions.
 
 ### Agents & MCP
 
-- **Coding Agent** `docs:copilot/tutorials/coding-agent/index.md` - Agent mode tutorials
 - **Enhance Agent Mode with MCP** `docs:copilot/tutorials/enhance-agent-mode-with-mcp.md`
 
 ### Chat Cookbook
@@ -164,3 +161,12 @@ GitHub Copilot documentation - AI pair programming, chat, and code suggestions.
 ## Responsible Use
 
 - **Responsible Use** `docs:copilot/responsible-use/index.md` - Guidelines for responsible AI use
+
+## New Documentation
+
+- **Concepts** (44 new files in `docs:copilot/concepts/`) _(new)_
+- **Enterprise Ai Governance** `docs:copilot/get-started/enterprise-ai-governance.md` _(new)_
+- **How Tos** (174 new files in `docs:copilot/how-tos/`) _(new)_
+- **Reference** (19 new files in `docs:copilot/reference/`) _(new)_
+- **Responsible Use** (3 new files in `docs:copilot/responsible-use/`) _(new)_
+- **Tutorials** (23 new files in `docs:copilot/tutorials/`) _(new)_

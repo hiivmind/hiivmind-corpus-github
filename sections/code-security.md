@@ -2,7 +2,7 @@
 
 GitHub Advanced Security (GHAS) documentation - code scanning, secret scanning, Dependabot, and supply chain security.
 
-> **443 files** | Source: `docs:code-security/`
+> **659 files** | Source: `docs:code-security/`
 
 ---
 
@@ -20,7 +20,6 @@ Code analysis to find security vulnerabilities and coding errors.
 
 ### Overview
 
-- **Code Scanning Overview** `docs:code-security/code-scanning/index.md`
 - **About Code Scanning** `docs:code-security/code-scanning/about/index.md`
 
 ### Configuration
@@ -57,7 +56,6 @@ GitHub's code analysis engine.
 
 ### CodeQL CLI
 
-- **CodeQL CLI Overview** `docs:code-security/codeql-cli/index.md`
 - **Getting Started** `docs:code-security/codeql-cli/getting-started/index.md`
 - **Using CodeQL CLI** `docs:code-security/codeql-cli/using/index.md`
 - **CodeQL Packs** `docs:code-security/codeql-cli/packs/index.md`
@@ -65,7 +63,6 @@ GitHub's code analysis engine.
 
 ### CodeQL for VS Code
 
-- **VS Code Extension** `docs:code-security/codeql-for-vs-code/index.md`
 - **Getting Started** `docs:code-security/codeql-for-vs-code/getting-started/index.md`
 - **Using the Extension** `docs:code-security/codeql-for-vs-code/using/index.md`
 
@@ -77,7 +74,6 @@ Detect secrets accidentally committed to repositories.
 
 ### Overview
 
-- **Secret Scanning Overview** `docs:code-security/secret-scanning/index.md`
 - **About Secret Scanning** `docs:code-security/secret-scanning/about/index.md`
 
 ### Configuration
@@ -108,7 +104,6 @@ Automated dependency updates and security alerts.
 
 ### Overview
 
-- **Dependabot Overview** `docs:code-security/dependabot/index.md`
 - **About Dependabot** `docs:code-security/dependabot/about/index.md`
 
 ### Alerts
@@ -148,7 +143,6 @@ Secure your software supply chain.
 
 ### Overview
 
-- **Supply Chain Security** `docs:code-security/supply-chain-security/index.md`
 
 ### Dependency Graph
 
@@ -170,7 +164,6 @@ Secure your software supply chain.
 
 Repository security advisories and the GitHub Advisory Database.
 
-- **Security Advisories** `docs:code-security/security-advisories/index.md`
 - **Repository Advisories** `docs:code-security/security-advisories/repository-security-advisories/index.md`
 - **Global Advisories** `docs:code-security/security-advisories/global-security-advisories/index.md`
 
@@ -180,7 +173,6 @@ Repository security advisories and the GitHub Advisory Database.
 
 Code quality tools and analysis.
 
-- **Code Quality** `docs:code-security/code-quality/index.md`
 
 ---
 
@@ -188,7 +180,6 @@ Code quality tools and analysis.
 
 Organization-wide security settings and policies.
 
-- **Securing Your Organization** `docs:code-security/securing-your-organization/index.md`
 - **Security Configurations** `docs:code-security/securing-your-organization/security-configurations/index.md`
 - **Security Policies** `docs:code-security/securing-your-organization/security-policies/index.md`
 
@@ -198,6 +189,13 @@ Organization-wide security settings and policies.
 
 Dashboard and reporting for security across repositories.
 
-- **Security Overview** `docs:code-security/security-overview/index.md`
 - **View Security Data** `docs:code-security/security-overview/view/index.md`
 - **Filter and Search** `docs:code-security/security-overview/filter/index.md`
+
+## New Documentation
+
+- **Concepts** (53 new files in `docs:code-security/concepts/`) _(new)_
+- **How Tos** (112 new files in `docs:code-security/how-tos/`) _(new)_
+- **Reference** (41 new files in `docs:code-security/reference/`) _(new)_
+- **Responsible Use** (2 new files in `docs:code-security/responsible-use/`) _(new)_
+- **Tutorials** (18 new files in `docs:code-security/tutorials/`) _(new)_

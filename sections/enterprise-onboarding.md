@@ -2,7 +2,7 @@
 
 GitHub Enterprise onboarding and setup guides.
 
-> **37 files** | Source: `docs:enterprise-onboarding/`
+> **38 files** | Source: `docs:enterprise-onboarding/`
 
 ---
 
@@ -21,3 +21,7 @@ GitHub Enterprise onboarding and setup guides.
 ## Best Practices
 
 - **Enterprise Best Practices** `docs:enterprise-onboarding/best-practices/index.md`
+
+## New Documentation
+
+- **Automations In Your Enterprise** `docs:enterprise-onboarding/github-apps/automations-in-your-enterprise.md` _(new)_

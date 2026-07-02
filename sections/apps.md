@@ -2,7 +2,7 @@
 
 GitHub Apps and OAuth Apps documentation.
 
-> **115 files** | Source: `docs:apps/`
+> **116 files** | Source: `docs:apps/`
 
 ---
 
@@ -48,3 +48,7 @@ GitHub Apps and OAuth Apps documentation.
 - **OAuth Apps** `docs:apps/oauth-apps/index.md`
 - **Building OAuth Apps** `docs:apps/oauth-apps/building/index.md`
 - **OAuth Flow** `docs:apps/oauth-apps/building/authorizing-oauth-apps.md`
+
+## New Documentation
+
+- **Github Authentication Discovery Endpoints** `docs:apps/github-authentication-discovery-endpoints.md` _(new)_

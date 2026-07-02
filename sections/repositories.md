@@ -2,7 +2,7 @@
 
 Repository management documentation.
 
-> **127 files** | Source: `docs:repositories/`
+> **131 files** | Source: `docs:repositories/`
 
 ---
 
@@ -45,3 +45,10 @@ Repository management documentation.
 ## Archiving
 
 - **Archiving** `docs:repositories/archiving-a-github-repository/index.md`
+
+## New Documentation
+
+- **About Actions Policies** `docs:repositories/managing-your-repositorys-settings-and-features/actions-policies/about-actions-policies.md` _(new)_
+- **Index** `docs:repositories/managing-your-repositorys-settings-and-features/actions-policies/index.md` _(new)_
+- **Workflow Execution Protections** `docs:repositories/managing-your-repositorys-settings-and-features/actions-policies/workflow-execution-protections.md` _(new)_
+- **Disabling Pull Requests** `docs:repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/disabling-pull-requests.md` _(new)_

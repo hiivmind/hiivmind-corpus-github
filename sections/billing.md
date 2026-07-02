@@ -2,7 +2,7 @@
 
 GitHub billing documentation - plans, usage, and spending.
 
-> **98 files** | Source: `docs:billing/`
+> **102 files** | Source: `docs:billing/`
 
 ---
 
@@ -46,3 +46,10 @@ GitHub billing documentation - plans, usage, and spending.
 ## Discounts & Offers
 
 - **Discounts** `docs:billing/managing-your-github-billing-settings/discounted-subscriptions.md`
+
+## New Documentation
+
+- **Cloud And Local Sandboxes** `docs:billing/concepts/product-billing/cloud-and-local-sandboxes.md` _(new)_
+- **Github Copilot Billing** `docs:billing/concepts/product-billing/github-copilot-billing.md` _(new)_
+- **Disable Ghas For Enterprise** `docs:billing/how-tos/products/disable-ghas-for-enterprise.md` _(new)_
+- **Soft Budgets** `docs:billing/tutorials/soft-budgets.md` _(new)_

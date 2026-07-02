@@ -2,7 +2,7 @@
 
 GitHub Enterprise administration documentation.
 
-> **392 files** | Source: `docs:admin/`
+> **420 files** | Source: `docs:admin/`
 
 ---
 
@@ -46,3 +46,16 @@ GitHub Enterprise administration documentation.
 
 - **Monitoring** `docs:admin/monitoring/index.md`
 - **Audit Log** `docs:admin/monitoring/audit-log/index.md`
+
+## New Documentation
+
+- **Backing Up And Restoring Your Instance** (3 new files in `docs:admin/backing-up-and-restoring-your-instance/`) _(new)_
+- **Concepts** (3 new files in `docs:admin/concepts/`) _(new)_
+- **Best Practices For Configuring Api Rate Limits** `docs:admin/configuring-settings/configuring-user-applications-for-your-enterprise/best-practices-for-configuring-api-rate-limits.md` _(new)_
+- **Github Copilot With Data Residency** `docs:admin/data-residency/github-copilot-with-data-residency.md` _(new)_
+- **Enforcing Policies** (3 new files in `docs:admin/enforcing-policies/`) _(new)_
+- **Managing Github Actions For Your Enterprise** (2 new files in `docs:admin/managing-github-actions-for-your-enterprise/`) _(new)_
+- **Managing Iam** (4 new files in `docs:admin/managing-iam/`) _(new)_
+- **Configuring User Display Names For Your Enterprise** `docs:admin/managing-your-enterprise-account/configuring-user-display-names-for-your-enterprise.md` _(new)_
+- **Monitoring And Managing Your Instance** (7 new files in `docs:admin/monitoring-and-managing-your-instance/`) _(new)_
+- **Upgrading Your Instance** (3 new files in `docs:admin/upgrading-your-instance/`) _(new)_

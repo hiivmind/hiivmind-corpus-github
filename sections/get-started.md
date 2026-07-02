@@ -2,7 +2,7 @@
 
 Getting started with GitHub - onboarding, quickstarts, and fundamentals.
 
-> **117 files** | Source: `docs:get-started/`
+> **118 files** | Source: `docs:get-started/`
 
 ---
 
@@ -56,3 +56,7 @@ Getting started with GitHub - onboarding, quickstarts, and fundamentals.
 
 - **Exploring Projects** `docs:get-started/exploring-projects-on-github/index.md`
 - **Finding Projects** `docs:get-started/exploring-projects-on-github/finding-ways-to-contribute.md`
+
+## New Documentation
+
+- **Github Docs Api** `docs:get-started/using-github-docs/github-docs-api.md` _(new)_

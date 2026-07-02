@@ -2,7 +2,7 @@
 
 GitHub REST API documentation - endpoints, authentication, and guides.
 
-> **292 files** | Source: `docs:rest/`
+> **313 files** | Source: `docs:rest/`
 
 ---
 
@@ -54,7 +54,6 @@ GitHub REST API documentation - endpoints, authentication, and guides.
 ### Projects
 
 - **Projects** `docs:rest/projects/index.md` - Projects (v2)
-- **Projects Classic** `docs:rest/projects-classic/index.md` - Classic projects
 
 ### Actions
 
@@ -161,3 +160,18 @@ GitHub REST API documentation - endpoints, authentication, and guides.
 
 - **GraphQL API** → See `sections/graphql.md` for GraphQL documentation
 - **GraphQL Schema** → See main index for `graphql-schema:schema.docs.graphql` (use Grep patterns)
+
+## New Documentation
+
+- **Concurrency Groups** `docs:rest/actions/concurrency-groups.md` _(new)_
+- **Agent Tasks** (2 new files in `docs:rest/agent-tasks/`) _(new)_
+- **Agents** (3 new files in `docs:rest/agents/`) _(new)_
+- **Usage Reports** `docs:rest/billing/usage-reports.md` _(new)_
+- **Code Quality** (2 new files in `docs:rest/code-quality/`) _(new)_
+- **Copilot** (4 new files in `docs:rest/copilot/`) _(new)_
+- **Copilot Spaces** (4 new files in `docs:rest/copilot-spaces/`) _(new)_
+- **Credential Authorizations** `docs:rest/enterprise-admin/credential-authorizations.md` _(new)_
+- **Issue Field Values** `docs:rest/issues/issue-field-values.md` _(new)_
+- **Issue Fields** `docs:rest/orgs/issue-fields.md` _(new)_
+- **Views** `docs:rest/projects/views.md` _(new)_
+- **Issue Types** `docs:rest/repos/issue-types.md` _(new)_

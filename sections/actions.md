@@ -2,7 +2,7 @@
 
 GitHub Actions documentation - CI/CD, workflows, runners, and automation.
 
-> **239 files** | Source: `docs:actions/`
+> **244 files** | Source: `docs:actions/`
 
 ---
 
@@ -237,3 +237,11 @@ GitHub Actions documentation - CI/CD, workflows, runners, and automation.
 
 - **Troubleshoot Workflows** `docs:actions/how-tos/troubleshoot-workflows.md`
 - **Get Support** `docs:actions/how-tos/get-support.md`
+
+## New Documentation
+
+- **Index** `docs:actions/how-tos/manage-runners/use-actions-runner-controller/index.md` _(new)_
+- **View Job Condition Logs** `docs:actions/how-tos/monitor-workflows/view-job-condition-logs.md` _(new)_
+- **Oidc In Octopus Deploy** `docs:actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-octopus-deploy.md` _(new)_
+- **Securely Using Pull Request Target** `docs:actions/reference/security/securely-using-pull_request_target.md` _(new)_
+- **Migrate To Github Runners** `docs:actions/tutorials/migrate-to-github-runners.md` _(new)_

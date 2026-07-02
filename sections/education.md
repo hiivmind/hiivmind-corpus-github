@@ -2,7 +2,7 @@
 
 GitHub Education and Classroom documentation.
 
-> **52 files** | Source: `docs:education/`
+> **53 files** | Source: `docs:education/`
 
 ---
 
@@ -32,3 +32,7 @@ GitHub Education and Classroom documentation.
 ## Global Campus
 
 - **About Global Campus** `docs:education/explore-the-benefits-of-teaching-and-learning-with-github-education/about-github-global-campus.md`
+
+## New Documentation
+
+- **Export Or Migrate Github Classroom Data** `docs:education/manage-coursework-with-github-classroom/get-started-with-github-classroom/export-or-migrate-github-classroom-data.md` _(new)_

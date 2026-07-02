@@ -2,7 +2,7 @@
 
 Contributing to open source on GitHub.
 
-> **43 files** | Source: `docs:contributing/`
+> **45 files** | Source: `docs:contributing/`
 
 ---
 
@@ -23,3 +23,8 @@ Contributing to open source on GitHub.
 ## Being a Maintainer
 
 - **Maintainer Overview** `docs:contributing/being-a-good-open-source-maintainer.md`
+
+## New Documentation
+
+- **Get Started Content Type** `docs:contributing/style-guide-and-content-model/get-started-content-type.md` _(new)_
+- **How To Content Type** `docs:contributing/style-guide-and-content-model/how-to-content-type.md` _(new)_

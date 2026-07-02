@@ -2,7 +2,7 @@
 
 Organization management documentation.
 
-> **166 files** | Source: `docs:organizations/`
+> **174 files** | Source: `docs:organizations/`
 
 ---
 
@@ -43,3 +43,14 @@ Organization management documentation.
 ## Billing
 
 - **Organization Billing** `docs:organizations/managing-billing-and-payments-for-your-organization/index.md`
+
+## New Documentation
+
+- **About Actions Policies** `docs:organizations/managing-organization-settings/actions-policies/about-actions-policies.md` _(new)_
+- **Index** `docs:organizations/managing-organization-settings/actions-policies/index.md` _(new)_
+- **Workflow Execution Protections** `docs:organizations/managing-organization-settings/actions-policies/workflow-execution-protections.md` _(new)_
+- **Allowing Repository Admins To Rename Branches With Organization Rulesets** `docs:organizations/managing-organization-settings/allowing-repository-admins-to-rename-branches-with-organization-rulesets.md` _(new)_
+- **Managing Commit Comments For Your Organization** `docs:organizations/managing-organization-settings/managing-commit-comments-for-your-organization.md` _(new)_
+- **Permissions Of Predefined Organization Roles** `docs:organizations/managing-peoples-access-to-your-organization-with-roles/permissions-of-predefined-organization-roles.md` _(new)_
+- **Github Credential Types** `docs:organizations/managing-programmatic-access-to-your-organization/github-credential-types.md` _(new)_
+- **Limiting Oauth App And Github App Access Requests And Installations** `docs:organizations/managing-programmatic-access-to-your-organization/limiting-oauth-app-and-github-app-access-requests-and-installations.md` _(new)_
