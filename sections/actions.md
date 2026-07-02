@@ -238,10 +238,10 @@ GitHub Actions documentation - CI/CD, workflows, runners, and automation.
 - **Troubleshoot Workflows** `docs:actions/how-tos/troubleshoot-workflows.md`
 - **Get Support** `docs:actions/how-tos/get-support.md`
 
-## New Documentation
+## New in This Refresh
 
-- **Index** `docs:actions/how-tos/manage-runners/use-actions-runner-controller/index.md` _(new)_
-- **View Job Condition Logs** `docs:actions/how-tos/monitor-workflows/view-job-condition-logs.md` _(new)_
-- **Oidc In Octopus Deploy** `docs:actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-octopus-deploy.md` _(new)_
-- **Securely Using Pull Request Target** `docs:actions/reference/security/securely-using-pull_request_target.md` _(new)_
-- **Migrate To Github Runners** `docs:actions/tutorials/migrate-to-github-runners.md` _(new)_
+- **Configuring OpenID Connect in Octopus Deploy** `docs:actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-octopus-deploy.md` — Use OpenID Connect within your workflows to authenticate with Octopus Deploy.
+- **Migrating from self-hosted runners to GitHub-hosted runners** `docs:actions/tutorials/migrate-to-github-runners.md` — Learn how to assess your current CI infrastructure and migrate workflows from self-hosted runners to Github-hosted ru...
+- **Securely using pull_request_target** `docs:actions/reference/security/securely-using-pull_request_target.md` — Learn about the security risks of the `pull_request_target event`.
+- **Use Actions Runner Controller** `docs:actions/how-tos/manage-runners/use-actions-runner-controller/index.md` — Host your own runners in a Kubernetes cluster with Actions Runner Controller.
+- **Viewing job condition expression logs** `docs:actions/how-tos/monitor-workflows/view-job-condition-logs.md` — Learn how to access and interpret expression evaluation logs for job-level `if` conditions in GitHub Actions.

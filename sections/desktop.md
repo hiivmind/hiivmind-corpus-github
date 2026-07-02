@@ -30,8 +30,8 @@ GitHub Desktop documentation - the desktop application for Git.
 - **Branch Management** `docs:desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches.md`
 - **Syncing Branches** `docs:desktop/contributing-and-collaborating-using-github-desktop/keeping-your-local-repository-in-sync/syncing-your-branch.md`
 
-## New Documentation
+## New in This Refresh
 
-- **Configuring Copilot In Github Desktop** `docs:desktop/configuring-and-customizing-github-desktop/configuring-copilot-in-github-desktop.md` _(new)_
-- **Managing Worktrees In Github Desktop** `docs:desktop/making-changes-in-a-branch/managing-worktrees-in-github-desktop.md` _(new)_
-- **Working With Git Hooks In Github Desktop** `docs:desktop/making-changes-in-a-branch/working-with-git-hooks-in-github-desktop.md` _(new)_
+- **Configuring Copilot in GitHub Desktop** `docs:desktop/configuring-and-customizing-github-desktop/configuring-copilot-in-github-desktop.md` — Choose which AI model Copilot Desktop Short uses for each feature, or connect your own LLM provider.
+- **Managing worktrees in GitHub Desktop** `docs:desktop/making-changes-in-a-branch/managing-worktrees-in-github-desktop.md` — Worktrees let you work on multiple branches of the same repository at the same time, so you can switch contexts, revi...
+- **Working with Git hooks in GitHub Desktop** `docs:desktop/making-changes-in-a-branch/working-with-git-hooks-in-github-desktop.md` — You can run Git hooks in your shell environment and bypass commit hooks directly from Desktop.

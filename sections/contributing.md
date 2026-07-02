@@ -24,7 +24,7 @@ Contributing to open source on GitHub.
 
 - **Maintainer Overview** `docs:contributing/being-a-good-open-source-maintainer.md`
 
-## New Documentation
+## New in This Refresh
 
-- **Get Started Content Type** `docs:contributing/style-guide-and-content-model/get-started-content-type.md` _(new)_
-- **How To Content Type** `docs:contributing/style-guide-and-content-model/how-to-content-type.md` _(new)_
+- **Get started content type** `docs:contributing/style-guide-and-content-model/get-started-content-type.md` — Get started content provides the minimal essential information to use a product or feature.
+- **How-to content type** `docs:contributing/style-guide-and-content-model/how-to-content-type.md` — Explain how to complete a task using Github products and features.

@@ -36,6 +36,6 @@ GitHub terms of service, privacy policies, and guidelines.
 - **Other Policies** `docs:site-policy/other-site-policies/index.md`
 - **Guidelines for Legal Requests** `docs:site-policy/other-site-policies/guidelines-for-legal-requests.md`
 
-## New Documentation
+## New in This Refresh
 
-- **Github Secret Scanning Partner Program Agreement** `docs:site-policy/github-terms/github-secret-scanning-partner-program-agreement.md` _(new)_
+- **GitHub Secret Scanning Partner Program Agreement** `docs:site-policy/github-terms/github-secret-scanning-partner-program-agreement.md`

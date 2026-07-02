@@ -57,6 +57,6 @@ Getting started with GitHub - onboarding, quickstarts, and fundamentals.
 - **Exploring Projects** `docs:get-started/exploring-projects-on-github/index.md`
 - **Finding Projects** `docs:get-started/exploring-projects-on-github/finding-ways-to-contribute.md`
 
-## New Documentation
+## New in This Refresh
 
-- **Github Docs Api** `docs:get-started/using-github-docs/github-docs-api.md` _(new)_
+- **GitHub Docs API** `docs:get-started/using-github-docs/github-docs-api.md` — Use the official Docs API to programmatically list pages, search, and retrieve Company Short documentation content.

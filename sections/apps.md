@@ -49,6 +49,6 @@ GitHub Apps and OAuth Apps documentation.
 - **Building OAuth Apps** `docs:apps/oauth-apps/building/index.md`
 - **OAuth Flow** `docs:apps/oauth-apps/building/authorizing-oauth-apps.md`
 
-## New Documentation
+## New in This Refresh
 
-- **Github Authentication Discovery Endpoints** `docs:apps/github-authentication-discovery-endpoints.md` _(new)_
+- **GitHub authentication discovery endpoints** `docs:apps/github-authentication-discovery-endpoints.md` — Github publishes OAuth 2.0 and OpenID Connect metadata documents.

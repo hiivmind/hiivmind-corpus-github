@@ -38,9 +38,9 @@ Issue tracking and project management documentation.
 - **Issue Forms** `docs:issues/tracking-your-work-with-issues/configuring-issues/index.md`
 - **Templates** `docs:issues/tracking-your-work-with-issues/configuring-issues/about-issue-templates.md`
 
-## New Documentation
+## New in This Refresh
 
-- **About Issue Fields** `docs:issues/planning-and-tracking-with-projects/understanding-fields/about-issue-fields.md` _(new)_
-- **Cloning An Issue** `docs:issues/tracking-your-work-with-issues/administering-issues/cloning-an-issue.md` _(new)_
-- **Adding And Managing Issue Fields** `docs:issues/tracking-your-work-with-issues/using-issues/adding-and-managing-issue-fields.md` _(new)_
-- **Managing Issue Fields In Your Organization** `docs:issues/tracking-your-work-with-issues/using-issues/managing-issue-fields-in-your-organization.md` _(new)_
+- **About issue fields in projects** `docs:issues/planning-and-tracking-with-projects/understanding-fields/about-issue-fields.md` — Learn how to use organization-level issue fields in your projects to track structured metadata like priority, effort,...
+- **Adding and managing issue fields** `docs:issues/tracking-your-work-with-issues/using-issues/adding-and-managing-issue-fields.md` — You can set, edit, and clear issue field values on individual issues to capture structured metadata for your team.
+- **Cloning an issue** `docs:issues/tracking-your-work-with-issues/administering-issues/cloning-an-issue.md` — To quickly create a similar issue, you can clone an existing open issue into the same repository or a different one.
+- **Managing issue fields in your organization** `docs:issues/tracking-your-work-with-issues/using-issues/managing-issue-fields-in-your-organization.md` — You can create and manage custom issue fields to collect structured metadata across all issues in your organization.

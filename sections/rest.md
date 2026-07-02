@@ -161,17 +161,62 @@ GitHub REST API documentation - endpoints, authentication, and guides.
 - **GraphQL API** → See `sections/graphql.md` for GraphQL documentation
 - **GraphQL Schema** → See main index for `graphql-schema:schema.docs.graphql` (use Grep patterns)
 
-## New Documentation
+## New in This Refresh
 
-- **Concurrency Groups** `docs:rest/actions/concurrency-groups.md` _(new)_
-- **Agent Tasks** (2 new files in `docs:rest/agent-tasks/`) _(new)_
-- **Agents** (3 new files in `docs:rest/agents/`) _(new)_
-- **Usage Reports** `docs:rest/billing/usage-reports.md` _(new)_
-- **Code Quality** (2 new files in `docs:rest/code-quality/`) _(new)_
-- **Copilot** (4 new files in `docs:rest/copilot/`) _(new)_
-- **Copilot Spaces** (4 new files in `docs:rest/copilot-spaces/`) _(new)_
-- **Credential Authorizations** `docs:rest/enterprise-admin/credential-authorizations.md` _(new)_
-- **Issue Field Values** `docs:rest/issues/issue-field-values.md` _(new)_
-- **Issue Fields** `docs:rest/orgs/issue-fields.md` _(new)_
-- **Views** `docs:rest/projects/views.md` _(new)_
-- **Issue Types** `docs:rest/repos/issue-types.md` _(new)_
+### Actions
+
+- **REST API endpoints for Actions concurrency groups** `docs:rest/actions/concurrency-groups.md`
+
+### Agent Tasks
+
+- **REST API endpoints for agent tasks** `docs:rest/agent-tasks/agent-tasks.md` — Use the REST API to start and manage Copilot cloud agent tasks
+- **REST API endpoints for agent tasks** `docs:rest/agent-tasks/index.md`
+
+### Agents
+
+- **REST API endpoints for agent secrets** `docs:rest/agents/secrets.md` — Use the REST API to manage secrets for agents.
+- **REST API endpoints for variables** `docs:rest/agents/variables.md` — Use the REST API to manage variables.
+- **REST endpoints for agents** `docs:rest/agents/index.md`
+
+### Billing
+
+- **Usage reports** `docs:rest/billing/usage-reports.md` — Use the REST API to create and retrieve usage report exports for an enterprise.
+
+### Code Quality
+
+- **REST API endpoints for code quality** `docs:rest/code-quality/code-quality.md` — Use the REST API to manage a code quality configuration.
+- **REST API endpoints for code quality** `docs:rest/code-quality/index.md`
+
+### Copilot
+
+- **REST API endpoints for Copilot cloud agent management** `docs:rest/copilot/copilot-coding-agent-management.md`
+- **REST API endpoints for Copilot cloud agent repository management** `docs:rest/copilot/copilot-cloud-agent-management.md` — Use the REST API to manage repository-level settings for Copilot cloud agent.
+- **REST API endpoints for Copilot content exclusion management** `docs:rest/copilot/copilot-content-exclusion-management.md` — Use the REST API to manage Copilot content exclusion rules.
+- **REST API endpoints for Copilot custom agents** `docs:rest/copilot/copilot-custom-agents.md` — Use the REST API to manage Copilot Custom Agents for your enterprise.
+
+### Copilot Spaces
+
+- **Copilot Spaces collaborators** `docs:rest/copilot-spaces/collaborators.md` — Use the REST API to manage collaborators for Copilot Spaces.
+- **REST API endpoints for Copilot Spaces** `docs:rest/copilot-spaces/copilot-spaces.md` — Use the REST API to manage Copilot Spaces and related resources.
+- **REST API endpoints for Copilot Spaces** `docs:rest/copilot-spaces/index.md`
+- **REST API endpoints for Copilot Spaces resources** `docs:rest/copilot-spaces/resources.md` — Use the REST API to interact with Copilot Spaces resources.
+
+### Enterprise Admin
+
+- **REST API endpoints for enterprise credential authorizations** `docs:rest/enterprise-admin/credential-authorizations.md` — Use the REST API to manage enterprise credential authorizations.
+
+### Issues
+
+- **REST API endpoints for issue field values** `docs:rest/issues/issue-field-values.md` — Use the REST API to view and manage issue field values for issues.
+
+### Orgs
+
+- **REST API endpoints for issue fields** `docs:rest/orgs/issue-fields.md` — Use the REST API to create and manage issue fields for an organization.
+
+### Projects
+
+- **REST API endpoints for Project views** `docs:rest/projects/views.md` — Use the REST API to manage Project views
+
+### Repos
+
+- **REST API endpoints for issue types** `docs:rest/repos/issue-types.md` — Use the REST API to manage issue types for a repository.

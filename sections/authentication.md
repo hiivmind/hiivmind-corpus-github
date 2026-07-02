@@ -52,6 +52,6 @@ Authentication documentation - SSH, tokens, SSO, and 2FA.
 - **Troubleshooting** `docs:authentication/troubleshooting-ssh/index.md`
 - **Permission Denied** `docs:authentication/troubleshooting-ssh/error-permission-denied-publickey.md`
 
-## New Documentation
+## New in This Refresh
 
-- **Revoking Your Credentials** `docs:authentication/keeping-your-account-and-data-secure/revoking-your-credentials.md` _(new)_
+- **Revoking your credentials** `docs:authentication/keeping-your-account-and-data-secure/revoking-your-credentials.md` — If you believe your account credentials may be compromised, you can revoke all your authorizations to protect any ent...

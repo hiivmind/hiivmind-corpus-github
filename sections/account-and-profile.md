@@ -33,7 +33,7 @@ GitHub account and profile settings documentation.
 
 - **Organization Membership** `docs:account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-your-membership-in-organizations/index.md`
 
-## New Documentation
+## New in This Refresh
 
-- **Moving Your Work To An Organization** `docs:account-and-profile/how-tos/account-management/moving-your-work-to-an-organization.md` _(new)_
-- **Removing Yourself From An Enterprise** `docs:account-and-profile/how-tos/organization-membership/removing-yourself-from-an-enterprise.md` _(new)_
+- **Moving your work to an organization** `docs:account-and-profile/how-tos/account-management/moving-your-work-to-an-organization.md` — You can transfer repositories and projects from your personal account to a new or existing organization through your ...
+- **Removing yourself from an enterprise** `docs:account-and-profile/how-tos/organization-membership/removing-yourself-from-an-enterprise.md` — You can leave an enterprise after removing yourself from every organization in the enterprise.

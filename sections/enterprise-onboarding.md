@@ -22,6 +22,6 @@ GitHub Enterprise onboarding and setup guides.
 
 - **Enterprise Best Practices** `docs:enterprise-onboarding/best-practices/index.md`
 
-## New Documentation
+## New in This Refresh
 
-- **Automations In Your Enterprise** `docs:enterprise-onboarding/github-apps/automations-in-your-enterprise.md` _(new)_
+- **Automations in your enterprise** `docs:enterprise-onboarding/github-apps/automations-in-your-enterprise.md` — Learn how Github Apps, external services, and GitHub Actions work together to automate processes in your enterprise.

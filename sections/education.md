@@ -33,6 +33,6 @@ GitHub Education and Classroom documentation.
 
 - **About Global Campus** `docs:education/explore-the-benefits-of-teaching-and-learning-with-github-education/about-github-global-campus.md`
 
-## New Documentation
+## New in This Refresh
 
-- **Export Or Migrate Github Classroom Data** `docs:education/manage-coursework-with-github-classroom/get-started-with-github-classroom/export-or-migrate-github-classroom-data.md` _(new)_
+- **Export or migrate GitHub Classroom data** `docs:education/manage-coursework-with-github-classroom/get-started-with-github-classroom/export-or-migrate-github-classroom-data.md` — Export your GitHub Classroom data to local files or migrate your data to a partner platform.
