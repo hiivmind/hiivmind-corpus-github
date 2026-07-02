@@ -13,6 +13,10 @@ Repository management documentation.
 - **Clone a Repo** `docs:repositories/creating-and-managing-repositories/clone-a-repo.md`
 - **Templates** `docs:repositories/creating-and-managing-repositories/templates/index.md`
 
+- **About Actions policies** `docs:repositories/managing-your-repositorys-settings-and-features/actions-policies/about-actions-policies.md` — Actions policies let you govern how GitHub Actions workflows run in your repository, starting with workflow execution...
+- **Actions policies** `docs:repositories/managing-your-repositorys-settings-and-features/actions-policies/index.md` — Actions policies let you govern how GitHub Actions workflows run in a repository.
+- **Disabling pull requests** `docs:repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/disabling-pull-requests.md` — You may wish to modify pull request access for your repository if you want to restrict contributions, or disable them...
+- **Workflow execution protections** `docs:repositories/managing-your-repositorys-settings-and-features/actions-policies/workflow-execution-protections.md` — Workflow execution protections let you control who can trigger GitHub Actions workflows and which events are permitte...
 ## Repository Settings
 
 - **Settings Overview** `docs:repositories/managing-your-repositorys-settings-and-features/index.md`
@@ -45,10 +49,3 @@ Repository management documentation.
 ## Archiving
 
 - **Archiving** `docs:repositories/archiving-a-github-repository/index.md`
-
-## New in This Refresh
-
-- **About Actions policies** `docs:repositories/managing-your-repositorys-settings-and-features/actions-policies/about-actions-policies.md` — Actions policies let you govern how GitHub Actions workflows run in your repository, starting with workflow execution...
-- **Actions policies** `docs:repositories/managing-your-repositorys-settings-and-features/actions-policies/index.md` — Actions policies let you govern how GitHub Actions workflows run in a repository.
-- **Disabling pull requests** `docs:repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/disabling-pull-requests.md` — You may wish to modify pull request access for your repository if you want to restrict contributions, or disable them...
-- **Workflow execution protections** `docs:repositories/managing-your-repositorys-settings-and-features/actions-policies/workflow-execution-protections.md` — Workflow execution protections let you control who can trigger GitHub Actions workflows and which events are permitte...

@@ -15,6 +15,7 @@ GitHub Copilot documentation - AI pair programming, chat, and code suggestions.
 
 ---
 
+- **Adopting GitHub Copilot in your enterprise** `docs:copilot/get-started/enterprise-ai-governance.md` — Adopt the latest GitHub Copilot features without compromising on control and governance.
 ## Concepts
 
 ### Core Features
@@ -43,128 +44,6 @@ GitHub Copilot documentation - AI pair programming, chat, and code suggestions.
 - **Spark** `docs:copilot/concepts/spark.md` - Copilot Spark
 
 ---
-
-## How-Tos
-
-### Setup
-
-- **Set Up Copilot** `docs:copilot/how-tos/set-up/index.md` - Installation and setup
-- **Configure Personal Settings** `docs:copilot/how-tos/configure-personal-settings/index.md`
-- **Configure Custom Instructions** `docs:copilot/how-tos/configure-custom-instructions/index.md`
-- **Configure Content Exclusion** `docs:copilot/how-tos/configure-content-exclusion/index.md`
-
-### Using Copilot
-
-- **Get Code Suggestions** `docs:copilot/how-tos/get-code-suggestions/index.md` - Completions
-- **Chat with Copilot** `docs:copilot/how-tos/chat-with-copilot/index.md` - Using Chat
-- **Provide Context** `docs:copilot/how-tos/provide-context/index.md` - Giving Copilot context
-- **Use AI Models** `docs:copilot/how-tos/use-ai-models/index.md` - Model selection
-- **Use Copilot Agents** `docs:copilot/how-tos/use-copilot-agents/index.md` - Agent mode
-- **Common Tasks** `docs:copilot/how-tos/use-copilot-for-common-tasks/index.md` - Task examples
-
-### Administration
-
-- **Administer Copilot** `docs:copilot/how-tos/administer-copilot/index.md` - Organization management
-- **Manage Account** `docs:copilot/how-tos/manage-your-account/index.md` - Account settings
-- **Manage Spending** `docs:copilot/how-tos/manage-and-track-spending/index.md` - Cost management
-
-### Troubleshooting
-
-- **Troubleshoot Copilot** `docs:copilot/how-tos/troubleshoot-copilot/index.md` - Common issues
-
----
-
-## Tutorials
-
-### Getting Productive
-
-- **Speed Up Development** `docs:copilot/tutorials/speed-up-development-work.md`
-- **Explore a Codebase** `docs:copilot/tutorials/explore-a-codebase.md`
-- **Write Tests** `docs:copilot/tutorials/write-tests.md`
-- **Refactor Code** `docs:copilot/tutorials/refactor-code.md`
-- **Learn a New Language** `docs:copilot/tutorials/learn-a-new-language.md`
-- **Review AI-Generated Code** `docs:copilot/tutorials/review-ai-generated-code.md`
-- **Vibe Coding** `docs:copilot/tutorials/vibe-coding.md`
-
-### GitHub Integration
-
-- **Explore Pull Requests** `docs:copilot/tutorials/explore-pull-requests.md`
-- **Explore Issues and Discussions** `docs:copilot/tutorials/explore-issues-and-discussions.md`
-- **Optimize Code Reviews** `docs:copilot/tutorials/optimize-code-reviews.md`
-
-### Project Work
-
-- **Plan a Project** `docs:copilot/tutorials/plan-a-project.md`
-- **Migrate a Project** `docs:copilot/tutorials/migrate-a-project.md`
-- **Upgrade Projects** `docs:copilot/tutorials/upgrade-projects.md`
-- **Modernize Legacy Code** `docs:copilot/tutorials/modernize-legacy-code.md`
-- **Reduce Technical Debt** `docs:copilot/tutorials/reduce-technical-debt.md`
-
-### Customization
-
-- **Use Custom Instructions** `docs:copilot/tutorials/use-custom-instructions.md`
-- **Customization Library** `docs:copilot/tutorials/customization-library/index.md`
-- **Compare AI Models** `docs:copilot/tutorials/compare-ai-models.md`
-
-### Agents & MCP
-
-- **Enhance Agent Mode with MCP** `docs:copilot/tutorials/enhance-agent-mode-with-mcp.md`
-
-### Chat Cookbook
-
-- **Copilot Chat Cookbook** `docs:copilot/tutorials/copilot-chat-cookbook/index.md` - Recipes and examples
-
-### Enterprise Rollout
-
-- **Roll Out at Scale** `docs:copilot/tutorials/roll-out-at-scale/index.md` - Enterprise deployment
-
-### Spark
-
-- **Spark Tutorials** `docs:copilot/tutorials/spark/index.md` - Copilot Spark
-
----
-
-## Reference
-
-### Keyboard & Cheat Sheet
-
-- **Keyboard Shortcuts** `docs:copilot/reference/keyboard-shortcuts.md`
-- **Cheat Sheet** `docs:copilot/reference/cheat-sheet.md`
-
-### AI Models
-
-- **AI Models Reference** `docs:copilot/reference/ai-models/index.md`
-
-### Billing
-
-- **Billing Reference** `docs:copilot/reference/copilot-billing/index.md`
-
-### Metrics
-
-- **Usage Metrics** `docs:copilot/reference/copilot-usage-metrics/index.md`
-- **Metrics Data** `docs:copilot/reference/metrics-data.md`
-
-### Configuration
-
-- **Custom Agents Configuration** `docs:copilot/reference/custom-agents-configuration.md`
-- **Copilot Allowlist** `docs:copilot/reference/copilot-allowlist-reference.md`
-- **MCP Allowlist Enforcement** `docs:copilot/reference/mcp-allowlist-enforcement.md`
-- **Review Excluded Files** `docs:copilot/reference/review-excluded-files.md`
-- **Policy Conflicts** `docs:copilot/reference/policy-conflicts.md`
-
-### Audit & Compliance
-
-- **Agentic Audit Log Events** `docs:copilot/reference/agentic-audit-log-events.md`
-
----
-
-## Responsible Use
-
-- **Responsible Use** `docs:copilot/responsible-use/index.md` - Guidelines for responsible AI use
-
-## New in This Refresh
-
-### Concepts
 
 - **About agent apps** `docs:copilot/concepts/agents/agent-apps.md` — Agent Apps Caps let you use partner-built agents directly in your workflows on Github, powered by your Copilot subscr...
 - **About agent management** `docs:copilot/concepts/agents/cloud-agent/agent-management.md` — Use one centralized control page to jump between agent sessions, check progress, and stay in control without losing y...
@@ -210,12 +89,35 @@ GitHub Copilot documentation - AI pair programming, chat, and code suggestions.
 - **Using GitHub Copilot in JetBrains IDEs** `docs:copilot/concepts/agents/copilot-in-jetbrains.md` — Learn about the different ways to use GitHub Copilot in Jetbrains Ides, including the GitHub Copilot plugin, JetBrain...
 - **Using LSP servers with GitHub Copilot CLI** `docs:copilot/concepts/agents/copilot-cli/lsp-servers.md` — LSP servers give Copilot CLI precise code intelligence, enabling it to navigate definitions, find references, and ren...
 - **Utility models** `docs:copilot/concepts/models/utility-models.md` — Utility models power background Copilot features.
+## How-Tos
 
-### Get Started
+### Setup
 
-- **Adopting GitHub Copilot in your enterprise** `docs:copilot/get-started/enterprise-ai-governance.md` — Adopt the latest GitHub Copilot features without compromising on control and governance.
+- **Set Up Copilot** `docs:copilot/how-tos/set-up/index.md` - Installation and setup
+- **Configure Personal Settings** `docs:copilot/how-tos/configure-personal-settings/index.md`
+- **Configure Custom Instructions** `docs:copilot/how-tos/configure-custom-instructions/index.md`
+- **Configure Content Exclusion** `docs:copilot/how-tos/configure-content-exclusion/index.md`
 
-### How Tos
+### Using Copilot
+
+- **Get Code Suggestions** `docs:copilot/how-tos/get-code-suggestions/index.md` - Completions
+- **Chat with Copilot** `docs:copilot/how-tos/chat-with-copilot/index.md` - Using Chat
+- **Provide Context** `docs:copilot/how-tos/provide-context/index.md` - Giving Copilot context
+- **Use AI Models** `docs:copilot/how-tos/use-ai-models/index.md` - Model selection
+- **Use Copilot Agents** `docs:copilot/how-tos/use-copilot-agents/index.md` - Agent mode
+- **Common Tasks** `docs:copilot/how-tos/use-copilot-for-common-tasks/index.md` - Task examples
+
+### Administration
+
+- **Administer Copilot** `docs:copilot/how-tos/administer-copilot/index.md` - Organization management
+- **Manage Account** `docs:copilot/how-tos/manage-your-account/index.md` - Account settings
+- **Manage Spending** `docs:copilot/how-tos/manage-and-track-spending/index.md` - Cost management
+
+### Troubleshooting
+
+- **Troubleshoot Copilot** `docs:copilot/how-tos/troubleshoot-copilot/index.md` - Common issues
+
+---
 
 - **Access GitHub Copilot for free as a student** `docs:copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-students.md` — Get free access to Copilot''s premium features as a verified student.
 - **Add custom instructions for Copilot** `docs:copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/index.md` — Give GitHub Copilot persistent instructions to customize responses according to your needs.
@@ -391,36 +293,55 @@ GitHub Copilot documentation - AI pair programming, chat, and code suggestions.
 - **Working with canvas extensions in the GitHub Copilot app** `docs:copilot/how-tos/github-copilot-app/working-with-canvas-extensions.md` — Use canvases in the GitHub Copilot App to build shared, agent-driven artifacts and interfaces for human-agent collabo...
 - **Working with hooks** `docs:copilot/how-tos/copilot-sdk/features/hooks.md`
 - **Your first agentic workflow** `docs:copilot/how-tos/github-agentic-workflows/quickstart.md` — Get your first AI-powered automation running using a pre-built workflow and the GitHub CLI.
+## Tutorials
 
-### Reference
+### Getting Productive
 
-- **Available filters for agent sessions** `docs:copilot/reference/agent-session-filters.md` — Search agentic activity in your enterprise with filters for agent sessions.
-- **Copilot CLI ACP server** `docs:copilot/reference/copilot-cli-reference/acp-server.md` — Learn about GitHub Copilot CLI's Agent Client Protocol server.
-- **Copilot CLI reference** `docs:copilot/reference/copilot-cli-reference/index.md` — Find information on options and settings for Copilot CLI.
-- **Copilot customization cheat sheet** `docs:copilot/reference/customization-cheat-sheet.md` — Compare the different customization options for GitHub Copilot.
-- **Copilot feature matrix** `docs:copilot/reference/copilot-feature-matrix.md` — Identify which IDEs support which GitHub Copilot features.
-- **Example schema for Copilot usage metrics** `docs:copilot/reference/copilot-usage-metrics/example-schema.md` — See an example schema of the data returned by the Copilot usage metrics API.
-- **GitHub Copilot CLI command reference** `docs:copilot/reference/copilot-cli-reference/cli-command-reference.md` — Find commands and keyboard shortcuts to help you use Copilot CLI effectively.
-- **GitHub Copilot CLI configuration directory** `docs:copilot/reference/copilot-cli-reference/cli-config-dir-reference.md` — Find information about the `~/.copilot` directory, where Copilot CLI stores configuration, session data, and customiz...
-- **GitHub Copilot CLI plugin reference** `docs:copilot/reference/copilot-cli-reference/cli-plugin-reference.md` — Find commands and configuration details for CLI plugins.
-- **GitHub Copilot CLI programmatic reference** `docs:copilot/reference/copilot-cli-reference/cli-programmatic-reference.md` — Find options for running Copilot CLI programmatically.
-- **GitHub Copilot hooks reference** `docs:copilot/reference/hooks-reference.md` — Find hook events, configuration formats, and input payloads for hooks in Copilot CLI and Copilot cloud agent.
-- **GitHub Copilot request-based billing for annual plan subscribers (legacy)** `docs:copilot/reference/copilot-billing/request-based-billing-legacy/index.md` — Find information about GitHub Copilot''s legacy premium request-based billing model if you''re a Copilot Pro Short an...
-- **Model multipliers for annual plans on request-based billing (legacy)** `docs:copilot/reference/copilot-billing/request-based-billing-legacy/model-multipliers-for-annual-plans.md` — Model multipliers for Copilot Pro Short and Copilot Pro Plus Short subscribers staying on annual plans under request-...
-- **Models and pricing for GitHub Copilot** `docs:copilot/reference/copilot-billing/models-and-pricing.md` — See per-token pricing for the models available in GitHub Copilot and reference rates for additional usage across plans.
-- **Requests in GitHub Copilot (legacy)** `docs:copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests.md` — Learn about requests in Copilot, including premium requests, how they work, and how to manage your usage effectively.
-- **Support for different types of custom instructions** `docs:copilot/reference/custom-instructions-support.md` — Find out which environments support which types of custom instructions.
-- **Supported surfaces for GitHub Copilot policies** `docs:copilot/reference/supported-surfaces-for-policies.md` — Which policies affect which Copilot features and surfaces?
-- **Team-level Copilot usage metrics** `docs:copilot/reference/copilot-usage-metrics/team-level-metrics.md` — Construct team-level GitHub Copilot usage metrics by joining the daily user-teams report with the daily per-user usag...
-- **What changed with Copilot billing (legacy)** `docs:copilot/reference/copilot-billing/request-based-billing-legacy/what-changed-with-billing.md` — Learn about what changed with billing and what your options are as a Copilot Pro Short and Copilot Pro Plus Short ann...
+- **Speed Up Development** `docs:copilot/tutorials/speed-up-development-work.md`
+- **Explore a Codebase** `docs:copilot/tutorials/explore-a-codebase.md`
+- **Write Tests** `docs:copilot/tutorials/write-tests.md`
+- **Refactor Code** `docs:copilot/tutorials/refactor-code.md`
+- **Learn a New Language** `docs:copilot/tutorials/learn-a-new-language.md`
+- **Review AI-Generated Code** `docs:copilot/tutorials/review-ai-generated-code.md`
+- **Vibe Coding** `docs:copilot/tutorials/vibe-coding.md`
 
-### Responsible Use
+### GitHub Integration
 
-- **Application card: GitHub Copilot Agents** `docs:copilot/responsible-use/agents.md` — Learn how to use GitHub Copilot agentic features responsibly by understanding their purposes, capabilities, and limit...
-- **Application card: GitHub Copilot Chat** `docs:copilot/responsible-use/chat.md` — Learn how to use GitHub Copilot Chat responsibly by understanding its purposes, capabilities, and limitations.
-- **Application card: GitHub Copilot inline suggestions** `docs:copilot/responsible-use/inline-suggestions.md` — Learn how to use GitHub Copilot inline suggestions responsibly by understanding their purposes, capabilities, and lim...
+- **Explore Pull Requests** `docs:copilot/tutorials/explore-pull-requests.md`
+- **Explore Issues and Discussions** `docs:copilot/tutorials/explore-issues-and-discussions.md`
+- **Optimize Code Reviews** `docs:copilot/tutorials/optimize-code-reviews.md`
 
-### Tutorials
+### Project Work
+
+- **Plan a Project** `docs:copilot/tutorials/plan-a-project.md`
+- **Migrate a Project** `docs:copilot/tutorials/migrate-a-project.md`
+- **Upgrade Projects** `docs:copilot/tutorials/upgrade-projects.md`
+- **Modernize Legacy Code** `docs:copilot/tutorials/modernize-legacy-code.md`
+- **Reduce Technical Debt** `docs:copilot/tutorials/reduce-technical-debt.md`
+
+### Customization
+
+- **Use Custom Instructions** `docs:copilot/tutorials/use-custom-instructions.md`
+- **Customization Library** `docs:copilot/tutorials/customization-library/index.md`
+- **Compare AI Models** `docs:copilot/tutorials/compare-ai-models.md`
+
+### Agents & MCP
+
+- **Enhance Agent Mode with MCP** `docs:copilot/tutorials/enhance-agent-mode-with-mcp.md`
+
+### Chat Cookbook
+
+- **Copilot Chat Cookbook** `docs:copilot/tutorials/copilot-chat-cookbook/index.md` - Recipes and examples
+
+### Enterprise Rollout
+
+- **Roll Out at Scale** `docs:copilot/tutorials/roll-out-at-scale/index.md` - Enterprise deployment
+
+### Spark
+
+- **Spark Tutorials** `docs:copilot/tutorials/spark/index.md` - Copilot Spark
+
+---
 
 - **Building guardrails for GitHub Copilot cloud agent** `docs:copilot/tutorials/cloud-agent/build-guardrails.md` — Configure your enterprise so that Copilot cloud agent will operate in a secure, compliant environment.
 - **Choosing your enterprise's plan for GitHub Copilot** `docs:copilot/tutorials/roll-out-at-scale/assign-licenses/choose-enterprise-plan.md` — Choose between Copilot Business Short and Copilot Enterprise Short.
@@ -445,3 +366,63 @@ GitHub Copilot documentation - AI pair programming, chat, and code suggestions.
 - **Using Copilot CLI as your AI SME** `docs:copilot/tutorials/use-an-ai-sme.md` — Use Copilot CLI as an always-available subject matter expert to learn how a codebase works, so you can confidently ma...
 - **Using GitHub Copilot cloud agent to improve a project** `docs:copilot/tutorials/cloud-agent/improve-a-project.md` — Find and fix problems in a project with Copilot cloud agent.
 - **Using hooks with Copilot CLI for predictable, policy-compliant execution** `docs:copilot/tutorials/copilot-cli-hooks.md` — Use hooks to log user prompts and control which tools Copilot CLI can run in a repository, so teams can automate safe...
+## Reference
+
+### Keyboard & Cheat Sheet
+
+- **Keyboard Shortcuts** `docs:copilot/reference/keyboard-shortcuts.md`
+- **Cheat Sheet** `docs:copilot/reference/cheat-sheet.md`
+
+### AI Models
+
+- **AI Models Reference** `docs:copilot/reference/ai-models/index.md`
+
+### Billing
+
+- **Billing Reference** `docs:copilot/reference/copilot-billing/index.md`
+
+### Metrics
+
+- **Usage Metrics** `docs:copilot/reference/copilot-usage-metrics/index.md`
+- **Metrics Data** `docs:copilot/reference/metrics-data.md`
+
+### Configuration
+
+- **Custom Agents Configuration** `docs:copilot/reference/custom-agents-configuration.md`
+- **Copilot Allowlist** `docs:copilot/reference/copilot-allowlist-reference.md`
+- **MCP Allowlist Enforcement** `docs:copilot/reference/mcp-allowlist-enforcement.md`
+- **Review Excluded Files** `docs:copilot/reference/review-excluded-files.md`
+- **Policy Conflicts** `docs:copilot/reference/policy-conflicts.md`
+
+### Audit & Compliance
+
+- **Agentic Audit Log Events** `docs:copilot/reference/agentic-audit-log-events.md`
+
+---
+
+- **Available filters for agent sessions** `docs:copilot/reference/agent-session-filters.md` — Search agentic activity in your enterprise with filters for agent sessions.
+- **Copilot CLI ACP server** `docs:copilot/reference/copilot-cli-reference/acp-server.md` — Learn about GitHub Copilot CLI's Agent Client Protocol server.
+- **Copilot CLI reference** `docs:copilot/reference/copilot-cli-reference/index.md` — Find information on options and settings for Copilot CLI.
+- **Copilot customization cheat sheet** `docs:copilot/reference/customization-cheat-sheet.md` — Compare the different customization options for GitHub Copilot.
+- **Copilot feature matrix** `docs:copilot/reference/copilot-feature-matrix.md` — Identify which IDEs support which GitHub Copilot features.
+- **Example schema for Copilot usage metrics** `docs:copilot/reference/copilot-usage-metrics/example-schema.md` — See an example schema of the data returned by the Copilot usage metrics API.
+- **GitHub Copilot CLI command reference** `docs:copilot/reference/copilot-cli-reference/cli-command-reference.md` — Find commands and keyboard shortcuts to help you use Copilot CLI effectively.
+- **GitHub Copilot CLI configuration directory** `docs:copilot/reference/copilot-cli-reference/cli-config-dir-reference.md` — Find information about the `~/.copilot` directory, where Copilot CLI stores configuration, session data, and customiz...
+- **GitHub Copilot CLI plugin reference** `docs:copilot/reference/copilot-cli-reference/cli-plugin-reference.md` — Find commands and configuration details for CLI plugins.
+- **GitHub Copilot CLI programmatic reference** `docs:copilot/reference/copilot-cli-reference/cli-programmatic-reference.md` — Find options for running Copilot CLI programmatically.
+- **GitHub Copilot hooks reference** `docs:copilot/reference/hooks-reference.md` — Find hook events, configuration formats, and input payloads for hooks in Copilot CLI and Copilot cloud agent.
+- **GitHub Copilot request-based billing for annual plan subscribers (legacy)** `docs:copilot/reference/copilot-billing/request-based-billing-legacy/index.md` — Find information about GitHub Copilot''s legacy premium request-based billing model if you''re a Copilot Pro Short an...
+- **Model multipliers for annual plans on request-based billing (legacy)** `docs:copilot/reference/copilot-billing/request-based-billing-legacy/model-multipliers-for-annual-plans.md` — Model multipliers for Copilot Pro Short and Copilot Pro Plus Short subscribers staying on annual plans under request-...
+- **Models and pricing for GitHub Copilot** `docs:copilot/reference/copilot-billing/models-and-pricing.md` — See per-token pricing for the models available in GitHub Copilot and reference rates for additional usage across plans.
+- **Requests in GitHub Copilot (legacy)** `docs:copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests.md` — Learn about requests in Copilot, including premium requests, how they work, and how to manage your usage effectively.
+- **Support for different types of custom instructions** `docs:copilot/reference/custom-instructions-support.md` — Find out which environments support which types of custom instructions.
+- **Supported surfaces for GitHub Copilot policies** `docs:copilot/reference/supported-surfaces-for-policies.md` — Which policies affect which Copilot features and surfaces?
+- **Team-level Copilot usage metrics** `docs:copilot/reference/copilot-usage-metrics/team-level-metrics.md` — Construct team-level GitHub Copilot usage metrics by joining the daily user-teams report with the daily per-user usag...
+- **What changed with Copilot billing (legacy)** `docs:copilot/reference/copilot-billing/request-based-billing-legacy/what-changed-with-billing.md` — Learn about what changed with billing and what your options are as a Copilot Pro Short and Copilot Pro Plus Short ann...
+## Responsible Use
+
+- **Responsible Use** `docs:copilot/responsible-use/index.md` - Guidelines for responsible AI use
+
+- **Application card: GitHub Copilot Agents** `docs:copilot/responsible-use/agents.md` — Learn how to use GitHub Copilot agentic features responsibly by understanding their purposes, capabilities, and limit...
+- **Application card: GitHub Copilot Chat** `docs:copilot/responsible-use/chat.md` — Learn how to use GitHub Copilot Chat responsibly by understanding its purposes, capabilities, and limitations.
+- **Application card: GitHub Copilot inline suggestions** `docs:copilot/responsible-use/inline-suggestions.md` — Learn how to use GitHub Copilot inline suggestions responsibly by understanding their purposes, capabilities, and lim...

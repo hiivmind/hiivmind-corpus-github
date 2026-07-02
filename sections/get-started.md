@@ -19,6 +19,7 @@ Getting started with GitHub - onboarding, quickstarts, and fundamentals.
 - **Supported Browsers** `docs:get-started/using-github/supported-browsers.md`
 - **Keyboard Shortcuts** `docs:get-started/using-github/keyboard-shortcuts.md`
 
+- **GitHub Docs API** `docs:get-started/using-github-docs/github-docs-api.md` — Use the official Docs API to programmatically list pages, search, and retrieve Company Short documentation content.
 ## Writing on GitHub
 
 - **Writing Overview** `docs:get-started/writing-on-github/index.md`
@@ -56,7 +57,3 @@ Getting started with GitHub - onboarding, quickstarts, and fundamentals.
 
 - **Exploring Projects** `docs:get-started/exploring-projects-on-github/index.md`
 - **Finding Projects** `docs:get-started/exploring-projects-on-github/finding-ways-to-contribute.md`
-
-## New in This Refresh
-
-- **GitHub Docs API** `docs:get-started/using-github-docs/github-docs-api.md` — Use the official Docs API to programmatically list pages, search, and retrieve Company Short documentation content.

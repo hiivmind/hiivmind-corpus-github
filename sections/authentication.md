@@ -47,11 +47,8 @@ Authentication documentation - SSH, tokens, SSO, and 2FA.
 - **Reviewing Security Log** `docs:authentication/keeping-your-account-and-data-secure/reviewing-your-security-log.md`
 - **Token Expiration** `docs:authentication/keeping-your-account-and-data-secure/token-expiration-and-revocation.md`
 
+- **Revoking your credentials** `docs:authentication/keeping-your-account-and-data-secure/revoking-your-credentials.md` — If you believe your account credentials may be compromised, you can revoke all your authorizations to protect any ent...
 ## Troubleshooting
 
 - **Troubleshooting** `docs:authentication/troubleshooting-ssh/index.md`
 - **Permission Denied** `docs:authentication/troubleshooting-ssh/error-permission-denied-publickey.md`
-
-## New in This Refresh
-
-- **Revoking your credentials** `docs:authentication/keeping-your-account-and-data-secure/revoking-your-credentials.md` — If you believe your account credentials may be compromised, you can revoke all your authorizations to protect any ent...

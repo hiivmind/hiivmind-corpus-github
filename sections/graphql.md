@@ -27,20 +27,6 @@ GitHub GraphQL API documentation.
 
 ---
 
-## Schema Reference
-
-For detailed type definitions, use the local GraphQL schema with Grep patterns:
-
-**Path:** `graphql-schema:schema.docs.graphql` ⚡ GREP
-
-**Search patterns:**
-- Find type: `grep -n "^type Repository " schema.docs.graphql -A 50`
-- Find input: `grep -n "^input CreateIssueInput " schema.docs.graphql -A 30`
-- Find enum: `grep -n "^enum IssueState " schema.docs.graphql -A 20`
-- Find mutation: `grep -n "createIssue" schema.docs.graphql -B 5 -A 30`
-
-## New in This Refresh
-
 - **Actions** `docs:graphql/reference/actions.md` — Reference documentation for GraphQL schema types in the Actions category.
 - **Activity** `docs:graphql/reference/activity.md` — Reference documentation for GraphQL schema types in the Activity category.
 - **Branches** `docs:graphql/reference/branches.md` — Reference documentation for GraphQL schema types in the Branches category.
@@ -84,3 +70,14 @@ For detailed type definitions, use the local GraphQL schema with Grep patterns:
 - **Sponsors** `docs:graphql/reference/sponsors.md` — Reference documentation for GraphQL schema types in the Sponsors category.
 - **Teams** `docs:graphql/reference/teams.md` — Reference documentation for GraphQL schema types in the Teams category.
 - **Users** `docs:graphql/reference/users.md` — Reference documentation for GraphQL schema types in the Users category.
+## Schema Reference
+
+For detailed type definitions, use the local GraphQL schema with Grep patterns:
+
+**Path:** `graphql-schema:schema.docs.graphql` ⚡ GREP
+
+**Search patterns:**
+- Find type: `grep -n "^type Repository " schema.docs.graphql -A 50`
+- Find input: `grep -n "^input CreateIssueInput " schema.docs.graphql -A 30`
+- Find enum: `grep -n "^enum IssueState " schema.docs.graphql -A 20`
+- Find mutation: `grep -n "createIssue" schema.docs.graphql -B 5 -A 30`

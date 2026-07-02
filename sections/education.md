@@ -29,10 +29,7 @@ GitHub Education and Classroom documentation.
 - **Managing Classrooms** `docs:education/manage-coursework-with-github-classroom/teach-with-github-classroom/manage-classrooms.md`
 - **Autograding** `docs:education/manage-coursework-with-github-classroom/teach-with-github-classroom/use-autograding.md`
 
+- **Export or migrate GitHub Classroom data** `docs:education/manage-coursework-with-github-classroom/get-started-with-github-classroom/export-or-migrate-github-classroom-data.md` — Export your GitHub Classroom data to local files or migrate your data to a partner platform.
 ## Global Campus
 
 - **About Global Campus** `docs:education/explore-the-benefits-of-teaching-and-learning-with-github-education/about-github-global-campus.md`
-
-## New in This Refresh
-
-- **Export or migrate GitHub Classroom data** `docs:education/manage-coursework-with-github-classroom/get-started-with-github-classroom/export-or-migrate-github-classroom-data.md` — Export your GitHub Classroom data to local files or migrate your data to a partner platform.

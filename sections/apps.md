@@ -19,6 +19,7 @@ GitHub Apps and OAuth Apps documentation.
 - **Registering** `docs:apps/creating-github-apps/registering/index.md`
 - **Permissions** `docs:apps/creating-github-apps/setting-permissions/index.md`
 
+- **GitHub authentication discovery endpoints** `docs:apps/github-authentication-discovery-endpoints.md` — Github publishes OAuth 2.0 and OpenID Connect metadata documents.
 ## Authenticating
 
 - **Authentication** `docs:apps/creating-github-apps/authenticating/index.md`
@@ -48,7 +49,3 @@ GitHub Apps and OAuth Apps documentation.
 - **OAuth Apps** `docs:apps/oauth-apps/index.md`
 - **Building OAuth Apps** `docs:apps/oauth-apps/building/index.md`
 - **OAuth Flow** `docs:apps/oauth-apps/building/authorizing-oauth-apps.md`
-
-## New in This Refresh
-
-- **GitHub authentication discovery endpoints** `docs:apps/github-authentication-discovery-endpoints.md` — Github publishes OAuth 2.0 and OpenID Connect metadata documents.

@@ -11,6 +11,10 @@ GitHub billing documentation - plans, usage, and spending.
 - **Billing Overview** `docs:billing/index.md`
 - **About Billing** `docs:billing/managing-your-billing/about-billing.md`
 
+- **Billing for Sandbox** `docs:billing/concepts/product-billing/cloud-and-local-sandboxes.md` — Learn how usage of Sandbox is measured and billed.
+- **Disabling GitHub Advanced Security for your enterprise** `docs:billing/how-tos/products/disable-ghas-for-enterprise.md` — Disable Ghas and prevent accidental re-enablement across your enterprise.
+- **GitHub Copilot billing** `docs:billing/concepts/product-billing/github-copilot-billing.md` — Copilot usage is measured and billed according to your plan.
+- **Start monitoring costs with soft budgets** `docs:billing/tutorials/soft-budgets.md` — Set soft budgets to monitor spending without blocking access to paid features while you build an understanding of you...
 ## Managing Billing
 
 - **Managing Billing** `docs:billing/managing-your-billing/index.md`
@@ -46,10 +50,3 @@ GitHub billing documentation - plans, usage, and spending.
 ## Discounts & Offers
 
 - **Discounts** `docs:billing/managing-your-github-billing-settings/discounted-subscriptions.md`
-
-## New in This Refresh
-
-- **Billing for Sandbox** `docs:billing/concepts/product-billing/cloud-and-local-sandboxes.md` — Learn how usage of Sandbox is measured and billed.
-- **Disabling GitHub Advanced Security for your enterprise** `docs:billing/how-tos/products/disable-ghas-for-enterprise.md` — Disable Ghas and prevent accidental re-enablement across your enterprise.
-- **GitHub Copilot billing** `docs:billing/concepts/product-billing/github-copilot-billing.md` — Copilot usage is measured and billed according to your plan.
-- **Start monitoring costs with soft budgets** `docs:billing/tutorials/soft-budgets.md` — Set soft budgets to monitor spending without blocking access to paid features while you build an understanding of you...
