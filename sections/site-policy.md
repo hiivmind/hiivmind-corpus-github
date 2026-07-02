@@ -2,7 +2,7 @@
 
 GitHub terms of service, privacy policies, and guidelines.
 
-> **72 files** | Source: `docs:site-policy/`
+> **73 files** | Source: `docs:site-policy/`
 
 ---
 
@@ -16,6 +16,7 @@ GitHub terms of service, privacy policies, and guidelines.
 - **GitHub Terms of Service** `docs:site-policy/github-terms/github-terms-of-service.md`
 - **Corporate Terms** `docs:site-policy/github-terms/github-corporate-terms-of-service.md`
 
+- **GitHub Secret Scanning Partner Program Agreement** `docs:site-policy/github-terms/github-secret-scanning-partner-program-agreement.md`
 ## Privacy
 
 - **Privacy Overview** `docs:site-policy/privacy-policies/index.md`

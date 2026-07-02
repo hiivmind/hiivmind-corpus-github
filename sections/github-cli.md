@@ -2,7 +2,7 @@
 
 GitHub CLI (gh) documentation.
 
-> **8 files** | Source: `docs:github-cli/`
+> **9 files** | Source: `docs:github-cli/`
 
 ---
 
@@ -19,3 +19,5 @@ GitHub CLI (gh) documentation.
 
 - **Using GitHub CLI** `docs:github-cli/using-github-cli/index.md`
 - **GitHub CLI in Workflows** `docs:github-cli/using-github-cli/using-github-cli-in-workflows.md`
+
+- **GitHub CLI telemetry** `docs:github-cli/github-cli/github-cli-telemetry.md` — Cli sends pseudonymous telemetry to help improve the product. Learn what data is collected and how to opt out.

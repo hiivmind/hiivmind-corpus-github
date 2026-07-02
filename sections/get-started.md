@@ -2,7 +2,7 @@
 
 Getting started with GitHub - onboarding, quickstarts, and fundamentals.
 
-> **117 files** | Source: `docs:get-started/`
+> **118 files** | Source: `docs:get-started/`
 
 ---
 
@@ -19,6 +19,7 @@ Getting started with GitHub - onboarding, quickstarts, and fundamentals.
 - **Supported Browsers** `docs:get-started/using-github/supported-browsers.md`
 - **Keyboard Shortcuts** `docs:get-started/using-github/keyboard-shortcuts.md`
 
+- **GitHub Docs API** `docs:get-started/using-github-docs/github-docs-api.md` — Use the official Docs API to programmatically list pages, search, and retrieve Company Short documentation content.
 ## Writing on GitHub
 
 - **Writing Overview** `docs:get-started/writing-on-github/index.md`

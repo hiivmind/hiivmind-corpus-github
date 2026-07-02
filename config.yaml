@@ -28,8 +28,8 @@ sources:
     repo_name: "docs"
     branch: "main"
     docs_root: "content"
-    last_commit_sha: "2dd103a1f1fef9f073c8d7f194f91d506f04101e"
-    last_indexed_at: "2025-12-13T09:01:20+11:00"
+    last_commit_sha: "dec52ec4cccb80f8c39900ef0f53d2d7b27f3a43"
+    last_indexed_at: "2026-07-02T00:00:00+00:00"
 
   - id: "graphql-schema"
     type: "local"
@@ -48,7 +48,7 @@ sources:
       url: "https://github.com/cli/cli"
       branch: "trunk"
       docs_root: "cmd/"
-      last_commit_sha: "51dfeeaa72a04d2476a4a4036bf528b9af441106"
+      last_commit_sha: "ff4e4a255006ca98e3036bd0f8d98374a405835f"
 
     # Web output (for live fetching)
     web_output:
@@ -474,11 +474,11 @@ sources:
       enabled: false
       dir: ".cache/web/gh-cli-manual/"
 
-    last_indexed_at: null
+    last_indexed_at: "2026-07-02T00:00:00+00:00"
 
 index:
   format: "markdown"
-  last_updated_at: "2025-12-13T09:01:20+11:00"
+  last_updated_at: "2026-07-02T00:00:00+00:00"
 
 settings:
   include_patterns:

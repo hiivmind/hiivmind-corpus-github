@@ -1,8 +1,8 @@
 # GitHub Documentation Corpus
 
 > **Sources:** docs (github/docs), graphql-schema (local), gh-cli-manual (web)
-> **Total:** 3,346 documentation files + GraphQL schema + gh CLI reference
-> **Last updated:** 2025-12-18
+> **Total:** 3,715 documentation files + GraphQL schema + gh CLI reference
+> **Last updated:** 2026-07-02
 
 This corpus provides comprehensive GitHub documentation. The index is organized by section, with detailed indices in `sections/`.
 
